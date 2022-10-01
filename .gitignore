@@ -80,3 +80,9 @@ fmod_editor.log
 /PrivateEar--FMOD/**.unsaved
 /PrivateEar--FMOD/**.cache
 /PrivateEar--FMOD/**.restore
+
+# More stuff idk
+.DS_Store
+.DS_Store
+PrivateEar/.DS_Store
+PrivateEar/UserSettings/EditorUserSettings.asset

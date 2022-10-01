@@ -5,8 +5,10 @@ using NaughtyAttributes;
 namespace Prototype {
 	public class Marker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 		public static Marker activeMarker;
+		[Required] public CrimeObject CorrectLink;
 		[Required] public LineRenderer linkLine;
 		[Required] public Transform anchor;
+		[SerializeField] ParticleSystem sys;
 		CrimeObject _linkedObject;
 		public CrimeObject linkedObject {
 			get => _linkedObject;
@@ -18,9 +20,17 @@ namespace Prototype {
 					value.linkedMarker = this;
 					linkLine.SetPositions(new Vector3[]{ (Vector2) anchor.position, (Vector2) value.transform.position});
 				}
+				if (Correct && !sys.isPlaying) sys.Play();
+				if (!Correct && sys.isPlaying) sys.Stop();
 				_linkedObject = value;
 			}
 		}
+
+		private void Update() {
+		}
+
+		public bool Correct => CorrectLink == _linkedObject;
+
 		public void OnBeginDrag(PointerEventData eventData) {
 			activeMarker = this;
 			linkLine.gameObject.SetActive(true);

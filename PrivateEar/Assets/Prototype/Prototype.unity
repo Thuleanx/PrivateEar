@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &116344258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1582310975996019155, guid: f997950fb9c4a98479b8b50748972955, type: 3}
+  m_PrefabInstance: {fileID: 524068349}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d59bd430e381744aaead2b55025ed62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &302275875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +443,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736002691 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1582310975996019155, guid: f997950fb9c4a98479b8b50748972955, type: 3}
+  m_PrefabInstance: {fileID: 1107670661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d59bd430e381744aaead2b55025ed62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907135633
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,11 +668,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109795343}
   m_CullTransparentMesh: 1
+--- !u!114 &1250599874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1582310975996019155, guid: f997950fb9c4a98479b8b50748972955, type: 3}
+  m_PrefabInstance: {fileID: 302275875}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d59bd430e381744aaead2b55025ed62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1564513786 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6239609445148296852, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
   m_PrefabInstance: {fileID: 6239609444531704686}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1564795903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1582310975996019155, guid: f997950fb9c4a98479b8b50748972955, type: 3}
+  m_PrefabInstance: {fileID: 1582310977552327212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d59bd430e381744aaead2b55025ed62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1586273610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -686,6 +730,10 @@ PrefabInstance:
       propertyPath: EventReference.Guid.Data4
       value: -2110283351
       objectReference: {fileID: 0}
+    - target: {fileID: 3273362458696543047, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
+      propertyPath: CorrectLink
+      value: 
+      objectReference: {fileID: 1250599874}
     - target: {fileID: 6239609445148296852, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -816,6 +864,10 @@ PrefabInstance:
       propertyPath: EventReference.Guid.Data4
       value: -321907578
       objectReference: {fileID: 0}
+    - target: {fileID: 3273362458696543047, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
+      propertyPath: CorrectLink
+      value: 
+      objectReference: {fileID: 116344258}
     - target: {fileID: 6239609445148296852, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1069,6 +1121,10 @@ PrefabInstance:
       propertyPath: EventReference.Guid.Data4
       value: 669119074
       objectReference: {fileID: 0}
+    - target: {fileID: 3273362458696543047, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
+      propertyPath: CorrectLink
+      value: 
+      objectReference: {fileID: 736002691}
     - target: {fileID: 6239609445148296852, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1357,6 +1413,10 @@ PrefabInstance:
       propertyPath: EventReference.Guid.Data4
       value: 1334377621
       objectReference: {fileID: 0}
+    - target: {fileID: 3273362458696543047, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
+      propertyPath: CorrectLink
+      value: 
+      objectReference: {fileID: 1564795903}
     - target: {fileID: 6239609445148296852, guid: 4edf05d0da5d17c4194393e665684187, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

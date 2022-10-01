@@ -9,8 +9,9 @@ public class SceneChanger : MonoBehaviour
 {
     public float fadeSpeed = 1f;
     public GameObject blackScreen;
+    public Canvas fadeCanvas;
     float time = 0f;
-    bool fadeOut = false;
+    bool fadeOut;
     public SceneReference sceneReference;
 
     public void Start()
@@ -18,7 +19,9 @@ public class SceneChanger : MonoBehaviour
         //Set fade screen to top layer
         //NOTE: THIS REQUIRES SETTING UP SPECIFIC LAYERS TO DISTINGUISH FADE
         //blackScreen.layer = LayerMask.NameToLayer("IgnoreRaycast");
-        blackScreen.GetComponent<SpriteRenderer>().color = new Color(0,0,0,1);
+        fadeOut = false;
+        blackScreen.GetComponent<Image>().color = new Color(0,0,0,1);
+        fadeCanvas.GetComponent<CanvasGroup>().alpha = 1;
     }
 
     public void Update()
@@ -39,21 +42,17 @@ public class SceneChanger : MonoBehaviour
 
     void FadeOut()
     {
-        //Alternative Option: alter canvas group alpha
-
-        Color fadeColor = blackScreen.GetComponent<Image>().color;
-        //Debug.Log("Fading out");
-        fadeColor.a += fadeSpeed * Time.deltaTime;
-        blackScreen.GetComponent<Image>().color = fadeColor;
+        fadeCanvas.GetComponent<CanvasGroup>().alpha += fadeSpeed * Time.deltaTime;
+        if (fadeCanvas.GetComponent<CanvasGroup>().alpha >= 1)
+        {
+            ChangeScene();
+        }
     }
 
     void FadeIn()
     {
-        Color fadeColor = blackScreen.GetComponent<Image>().color;
-        //Debug.Log("Fading in");
-        fadeColor.a -= fadeSpeed * Time.deltaTime;
-        blackScreen.GetComponent<Image>().color = fadeColor;
-        if (fadeColor.a <= 0)
+        fadeCanvas.GetComponent<CanvasGroup>().alpha -= fadeSpeed * Time.deltaTime;
+        if (fadeCanvas.GetComponent<CanvasGroup>().alpha <= 0)
         {
             fadeOut = true;
         }
@@ -61,8 +60,6 @@ public class SceneChanger : MonoBehaviour
 
     void ChangeScene()
     {
-        //Changes scene sequentially, if other order is required, implement scene specific function
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //Use sceneReference (safe as index can change)
+        sceneReference.LoadScene();
     }
 }

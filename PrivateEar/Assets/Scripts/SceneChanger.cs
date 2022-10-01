@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using PrivateEar.Utils;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class SceneChanger : MonoBehaviour
     public GameObject blackScreen;
     float time = 0f;
     bool fadeOut = false;
+    public SceneReference sceneReference;
 
     public void Start()
     {
@@ -37,19 +39,20 @@ public class SceneChanger : MonoBehaviour
 
     void FadeOut()
     {
+        //Alternative Option: alter canvas group alpha
 
-        Color fadeColor = blackScreen.GetComponent<SpriteRenderer>().color;
+        Color fadeColor = blackScreen.GetComponent<Image>().color;
         //Debug.Log("Fading out");
         fadeColor.a += fadeSpeed * Time.deltaTime;
-        blackScreen.GetComponent<SpriteRenderer>().color = fadeColor;
+        blackScreen.GetComponent<Image>().color = fadeColor;
     }
 
     void FadeIn()
     {
-        Color fadeColor = blackScreen.GetComponent<SpriteRenderer>().color;
+        Color fadeColor = blackScreen.GetComponent<Image>().color;
         //Debug.Log("Fading in");
         fadeColor.a -= fadeSpeed * Time.deltaTime;
-        blackScreen.GetComponent<SpriteRenderer>().color = fadeColor;
+        blackScreen.GetComponent<Image>().color = fadeColor;
         if (fadeColor.a <= 0)
         {
             fadeOut = true;

@@ -693,7 +693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -908,9 +908,9 @@ MonoBehaviour:
   blackScreen: {fileID: 1343410139}
   fadeCanvas: {fileID: 1694562003}
   sceneReference:
-    Scene: {fileID: 102900000, guid: 49f07cacdf725486f88300c33302ac31, type: 3}
-    SceneName: SceneChangeTest2
-    sceneIndex: 2
+    Scene: {fileID: 102900000, guid: 542e15babc0adff45994f42eb736af26, type: 3}
+    SceneName: scn02_animatic_test
+    sceneIndex: 4
     sceneEnabled: 1
 --- !u!114 &1694562001
 MonoBehaviour:
@@ -1186,6 +1186,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 909236409}
     m_Modifications:
+    - target: {fileID: 4303448587357597170, guid: c89f13029a6644747aff2276c1aa3071, type: 3}
+      propertyPath: OnWin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1694562000}
+    - target: {fileID: 4303448587357597170, guid: c89f13029a6644747aff2276c1aa3071, type: 3}
+      propertyPath: OnWin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerFadeout
+      objectReference: {fileID: 0}
     - target: {fileID: 4303448587592818588, guid: c89f13029a6644747aff2276c1aa3071, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

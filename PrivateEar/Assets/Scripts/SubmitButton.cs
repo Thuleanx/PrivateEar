@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PrivateEar {
 	public class SubmitButton : MonoBehaviour {
 		public bool Active => isActiveAndEnabled;
+		public UnityEvent OnWin;
 
 		public FailMessage FailMessageGenerator;
 
@@ -16,8 +18,8 @@ namespace PrivateEar {
 
 		public void OnClick() {
 			if (GameMaster.Instance.IsCorrectMatching) {
+				OnWin?.Invoke();
 				Disappear();
-				// transition
 			} else {
 				FailMessageGenerator?.GenerateFailMessage();
 				Disappear();

@@ -436,9 +436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneReference:
-    Scene: {fileID: 102900000, guid: 542e15babc0adff45994f42eb736af26, type: 3}
+    Scene: {fileID: 102900000, guid: 36c07ba9060ec534ba35daa347951673, type: 3}
     SceneName: scn_thuleanx_gameplay
-    sceneIndex: 4
+    sceneIndex: 5
     sceneEnabled: 1
   Delay: 1
 --- !u!1 &399689332

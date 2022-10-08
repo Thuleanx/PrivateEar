@@ -41,6 +41,8 @@ namespace PrivateEar {
 			if (fadeCanvas.GetComponent<CanvasGroup>().alpha <= 0) fadeState = NEUTRAL;
 		}
 
+		public void TriggerFadeout() => fadeState = FADEOUT;
+
 		void ChangeScene() {
 			sceneReference.LoadScene();
 		}

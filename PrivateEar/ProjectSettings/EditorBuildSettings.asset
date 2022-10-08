@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneChangeTest2.unity
     guid: 49f07cacdf725486f88300c33302ac31
+  - enabled: 1
+    path: Assets/Scenes/Thuleanx_GameloopDemo/scn_thuleanx_mainMenu.unity
+    guid: a860331fdb4aa8749bb39f407f7ae209
+  - enabled: 1
+    path: Assets/Scenes/Thuleanx_GameloopDemo/scn_thuleanx_gameplay.unity
+    guid: 542e15babc0adff45994f42eb736af26
   m_configObjects: {}

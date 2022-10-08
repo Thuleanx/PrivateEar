@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3966100937443743969}
-  - component: {fileID: 3966100937443743968}
   - component: {fileID: 3966100937443743982}
+  - component: {fileID: 2013840660132725707}
   m_Layer: 5
   m_Name: Marker
   m_TagString: Untagged
@@ -40,7 +40,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3966100937443743968
+--- !u!222 &3966100937443743982
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3966100937443743970}
+  m_CullTransparentMesh: 1
+--- !u!114 &2013840660132725707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +57,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3966100937443743970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67484c8b7d091ce489d1c52557cc3638, type: 3}
+  m_Script: {fileID: 11500000, guid: 5613a57bb1e5c419d816f124e15e540b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sound:
@@ -59,14 +67,6 @@ MonoBehaviour:
       Data3: -2018973516
       Data4: 1334377621
     Path: event:/Prototype/Marker 0
---- !u!222 &3966100937443743982
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3966100937443743970}
-  m_CullTransparentMesh: 1
 --- !u!1 &3966100937712928294
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3966100937443743968}
+      - m_Target: {fileID: 2013840660132725707}
         m_TargetAssemblyTypeName: PrivateEar.Marker, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1

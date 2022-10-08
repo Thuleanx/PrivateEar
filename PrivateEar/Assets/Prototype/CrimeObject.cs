@@ -5,7 +5,6 @@ namespace Prototype {
 		public static CrimeObject activeCrimeObject;
 		[SerializeField] GameObject outline;
 		public Marker linkedMarker;
-
 		private void OnMouseEnter() {
 			activeCrimeObject = this;
 			outline?.SetActive(true);

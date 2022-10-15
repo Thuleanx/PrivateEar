@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: b2eeca974719555489621b342e3e7c40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _matchedMarker: {fileID: 0}
+  spriteOutlineFieldName: _Thickness
+  outlineThicknessOnHover: 0.02
 --- !u!61 &1400732965613826524
 BoxCollider2D:
   m_ObjectHideFlags: 0

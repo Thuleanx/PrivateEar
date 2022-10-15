@@ -31,6 +31,8 @@ namespace PrivateEar {
 
 		void FadeOut() {
 			fadeCanvas.GetComponent<CanvasGroup>().alpha += fadeSpeed * Time.deltaTime;
+			Debug.Log(fadeCanvas.GetComponent<CanvasGroup>().alpha);
+			Debug.Log(Time.deltaTime);
 			if (fadeCanvas.GetComponent<CanvasGroup>().alpha >= 1) {
 				ChangeScene();
 			}

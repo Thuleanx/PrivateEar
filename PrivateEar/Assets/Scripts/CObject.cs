@@ -2,6 +2,7 @@ using UnityEngine;
 using NaughtyAttributes;
 
 namespace PrivateEar {
+	[RequireComponent(typeof(Collider2D))]
 	public class CObject : MonoBehaviour {
 		public static CObject HoveredObject = null;
 

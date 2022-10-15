@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5613a57bb1e5c419d816f124e15e540b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctMatching: {fileID: 0}
   sound:
     Guid:
       Data1: 1108861713
@@ -67,6 +68,9 @@ MonoBehaviour:
       Data3: -2018973516
       Data4: 1334377621
     Path: event:/Prototype/Marker 0
+  _matchedObj: {fileID: 0}
+  markerObj: {fileID: 3966100937989255264}
+  mouseHoverOffsetSS: {x: 0, y: 50}
 --- !u!1 &3966100937712928294
 GameObject:
   m_ObjectHideFlags: 0

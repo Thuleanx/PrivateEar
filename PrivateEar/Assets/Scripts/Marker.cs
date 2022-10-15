@@ -9,10 +9,19 @@ namespace PrivateEar {
 	/// Marker objects
 	/// </summary>
 	public class Marker : MonoBehaviour,  IBeginDragHandler, IDragHandler, IEndDragHandler  {
+		public Canvas canvas { get; private set;  }
+
 		[SerializeField, Required] CObject correctMatching;
 		[SerializeField] EventReference sound;
 
 		[SerializeField, ReadOnly] CObject _matchedObj;
+
+		// juice objects
+		[SerializeField, Required] RectTransform markerObj;
+		[SerializeField] Vector2 mouseHoverOffsetSS;
+		Vector2 markerObjPos;
+
+
 		public CObject MatchedObject {
 			get => _matchedObj;
 			set {
@@ -23,8 +32,13 @@ namespace PrivateEar {
 			}
 		}
 
-		private void Start() {
+		private void Awake() { canvas = GetComponentInParent<Canvas>(); }
+		private void OnEnable() {
 			GameMaster.Instance?.RegisterMarker(this);
+			markerObjPos = markerObj.anchoredPosition;
+		}
+
+		private void OnDisable() {
 		}
 
 		public void OnClick() {
@@ -36,14 +50,24 @@ namespace PrivateEar {
 		}
 
 		public void OnBeginDrag(PointerEventData eventData) {
+			Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position / canvas.scaleFactor + mouseHoverOffsetSS);
+			markerObj.position = pointerPosWS;
 		}
 
 		public void OnDrag(PointerEventData eventData) {
+			markerObj.anchoredPosition += eventData.delta / canvas.scaleFactor;
 		}
 
 		public void OnEndDrag(PointerEventData eventData) {
-			if (CObject.HoveredObject) 	MatchedObject = CObject.HoveredObject;
-			else 						MatchedObject = null;
+			if (CObject.HoveredObject) {
+				// then we have a matching
+				MatchedObject = CObject.HoveredObject;
+				markerObj.anchoredPosition = markerObjPos;
+			} else {
+				// then we didn't drop it on any matchable element
+				MatchedObject = null;
+				markerObj.anchoredPosition = markerObjPos;
+			}
 		}
 
 		public bool IsCorrectMatch => _matchedObj == correctMatching;

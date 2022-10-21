@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using NaughtyAttributes;
 
 namespace Prototype {
-	public class Marker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
+	public class Marker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler {
 		public static Marker activeMarker;
 		[Required] public CrimeObject CorrectLink;
 		[Required] public LineRenderer linkLine;
@@ -25,6 +25,7 @@ namespace Prototype {
 				_linkedObject = value;
 			}
 		}
+		public bool hover { get; private set; }
 
 		private void Update() {
 		}
@@ -47,5 +48,8 @@ namespace Prototype {
 
 		public void Link(CrimeObject obj) => linkedObject = obj;
 		public void Unlink() => linkedObject = null;
+
+		public void OnPointerExit(PointerEventData eventData) => hover = true;
+		public void OnPointerEnter(PointerEventData eventData) => hover = false;
 	}
 }

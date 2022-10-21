@@ -10,6 +10,8 @@ namespace PrivateEar {
 		public SpriteRenderer Sprite { get; private set; }
 		public CrimeMarker CrimeMarker { get; private set; }
 
+		public bool hover { get; private set; }
+
 		[Header("Sprite")]
 		[SerializeField] string spriteOutlineFieldName = "_Outline";
 		[SerializeField] float outlineThicknessOnHover;
@@ -39,11 +41,13 @@ namespace PrivateEar {
 		public void OnHoverEnter() {
 			HoveredObject = this;
 			Sprite.material.SetFloat(spriteOutlineFieldName, outlineThicknessOnHover);
+			hover = true;
 		}
 
 		public void OnHoverExit() {
 			Sprite.material.SetFloat(spriteOutlineFieldName, 0f);
 			if (HoveredObject == this) HoveredObject = null;
+			hover = false;
 		}
 
 		private void OnMouseEnter() => OnHoverEnter();

@@ -8,7 +8,7 @@ namespace PrivateEar {
 	/// <summary>
 	/// Marker objects
 	/// </summary>
-	public class Marker : MonoBehaviour,  IBeginDragHandler, IDragHandler, IEndDragHandler  {
+	public class Marker : MonoBehaviour,  IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler  {
 		public Canvas canvas { get; private set;  }
 
 		[SerializeField, Required] CObject correctMatching;
@@ -21,7 +21,6 @@ namespace PrivateEar {
 		[SerializeField] Vector2 mouseHoverOffsetSS;
 		Vector2 markerObjPos;
 
-
 		public CObject MatchedObject {
 			get => _matchedObj;
 			set {
@@ -31,6 +30,7 @@ namespace PrivateEar {
 				_matchedObj = value;
 			}
 		}
+		public bool hover;
 
 		private void Awake() { canvas = GetComponentInParent<Canvas>(); }
 		private void Start() {
@@ -49,6 +49,7 @@ namespace PrivateEar {
 		public void OnBeginDrag(PointerEventData eventData) {
 			Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position / canvas.scaleFactor + mouseHoverOffsetSS);
 			markerObj.position = pointerPosWS;
+			InputManager.Instance.DraggingCnt++;
 		}
 
 		public void OnDrag(PointerEventData eventData) {
@@ -56,6 +57,7 @@ namespace PrivateEar {
 		}
 
 		public void OnEndDrag(PointerEventData eventData) {
+			InputManager.Instance.DraggingCnt--;
 			if (CObject.HoveredObject) {
 				// then we have a matching
 				MatchedObject = CObject.HoveredObject;
@@ -78,5 +80,8 @@ namespace PrivateEar {
 			Gizmos.color = Color.green;
 			if (correctMatching) Gizmos.DrawLine(transform.position, correctMatching.transform.position);
 		}
+
+		public void OnPointerExit(PointerEventData eventData) => hover = false;
+		public void OnPointerEnter(PointerEventData eventData) => hover = true;
 	}
 }

@@ -8,6 +8,7 @@ namespace PrivateEar {
 
 		[SerializeField, ReadOnly] Marker _matchedMarker;
 		public SpriteRenderer Sprite { get; private set; }
+		public CrimeMarker CrimeMarker { get; private set; }
 
 		[Header("Sprite")]
 		[SerializeField] string spriteOutlineFieldName = "_Outline";
@@ -15,11 +16,18 @@ namespace PrivateEar {
 
 		public Marker MatchedMarker {
 			get => _matchedMarker;
-			set { _matchedMarker = value; }
+			set { 
+				_matchedMarker = value;
+				CrimeMarker.gameObject.SetActive(false);
+				// configure crime marker object
+				CrimeMarker.gameObject.SetActive(_matchedMarker != null);
+			}
 		}
 
 		private void Awake() {
 			Sprite = GetComponentInChildren<SpriteRenderer>();
+			CrimeMarker = GetComponentInChildren<CrimeMarker>();
+			CrimeMarker.gameObject.SetActive(false);
 			Sprite.material = new Material(Sprite.material);
 			Sprite.material.SetFloat(spriteOutlineFieldName, 0f);
 		}

@@ -33,12 +33,9 @@ namespace PrivateEar {
 		}
 
 		private void Awake() { canvas = GetComponentInParent<Canvas>(); }
-		private void OnEnable() {
+		private void Start() {
 			GameMaster.Instance?.RegisterMarker(this);
 			markerObjPos = markerObj.anchoredPosition;
-		}
-
-		private void OnDisable() {
 		}
 
 		public void OnClick() {

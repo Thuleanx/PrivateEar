@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 
 [DisallowMultipleComponent]
@@ -58,3 +59,4 @@ public class PrettyObject : MonoBehaviour
         }
     }
 }
+#endif

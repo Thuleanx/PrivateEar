@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Next:
-    Scene: {fileID: 0}
-    SceneName: 
-    sceneIndex: -1
-    sceneEnabled: 0
+    Scene: {fileID: 102900000, guid: a860331fdb4aa8749bb39f407f7ae209, type: 3}
+    SceneName: scn00_mainMenu_test
+    sceneIndex: 1
+    sceneEnabled: 1

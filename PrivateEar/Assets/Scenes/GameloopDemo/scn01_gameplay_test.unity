@@ -1901,6 +1901,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: obj_fishOnTheWall
       objectReference: {fileID: 0}
+    - target: {fileID: 9000167451769474308, guid: b8bd3c1baee4f0e43bdd2be170037482, type: 3}
+      propertyPath: m_Color.b
+      value: 0.032075405
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000167451769474308, guid: b8bd3c1baee4f0e43bdd2be170037482, type: 3}
+      propertyPath: m_Color.g
+      value: 0.032075405
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000167451769474308, guid: b8bd3c1baee4f0e43bdd2be170037482, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8bd3c1baee4f0e43bdd2be170037482, type: 3}
 --- !u!1001 &2705591002553160195
@@ -2419,6 +2431,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: obj_sinkDishes
       objectReference: {fileID: 0}
+    - target: {fileID: 5463816010081649545, guid: 719b387916cb7524ab7b0d8cf0362943, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463816010081649545, guid: 719b387916cb7524ab7b0d8cf0362943, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463816010081649545, guid: 719b387916cb7524ab7b0d8cf0362943, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 719b387916cb7524ab7b0d8cf0362943, type: 3}
 --- !u!1001 &5437386121310669359
@@ -2599,6 +2623,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 503716771}
     m_Modifications:
+    - target: {fileID: 1374808764590114229, guid: f26c58d42a66d4b4b9f962b0ae7722e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374808764590114229, guid: f26c58d42a66d4b4b9f962b0ae7722e4, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374808764590114229, guid: f26c58d42a66d4b4b9f962b0ae7722e4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1374808766350285865, guid: f26c58d42a66d4b4b9f962b0ae7722e4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2714,6 +2750,18 @@ PrefabInstance:
     - target: {fileID: 2187623967847751479, guid: 0fad86ffeba72ec43aa965b7f03efaff, type: 3}
       propertyPath: m_Name
       value: obj_stool
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187623969810024104, guid: 0fad86ffeba72ec43aa965b7f03efaff, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187623969810024104, guid: 0fad86ffeba72ec43aa965b7f03efaff, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187623969810024104, guid: 0fad86ffeba72ec43aa965b7f03efaff, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fad86ffeba72ec43aa965b7f03efaff, type: 3}

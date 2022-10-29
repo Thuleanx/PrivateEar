@@ -175,7 +175,7 @@ MonoBehaviour:
   sceneReference:
     Scene: {fileID: 102900000, guid: 49f07cacdf725486f88300c33302ac31, type: 3}
     SceneName: SceneChangeTest2
-    sceneIndex: 2
+    sceneIndex: 4
     sceneEnabled: 1
   isPause: 0
 --- !u!114 &155363701
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1619587733}
-  pauseCanvas: {fileID: 0}
+  pauseCanvas: {fileID: 901402166}
 --- !u!1 &704191218
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ MonoBehaviour:
   sceneReference:
     Scene: {fileID: 102900000, guid: 49f07cacdf725486f88300c33302ac31, type: 3}
     SceneName: SceneChangeTest2
-    sceneIndex: 2
+    sceneIndex: 4
     sceneEnabled: 1
   isPause: 1
 --- !u!1 &1158098840
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   sceneReference:
     Scene: {fileID: 102900000, guid: 2e9e08b2e8251444183d30492ff43432, type: 3}
     SceneName: SceneChangeTest1
-    sceneIndex: 1
+    sceneIndex: -1
     sceneEnabled: 1
   isPause: 1
 --- !u!1 &1192079843

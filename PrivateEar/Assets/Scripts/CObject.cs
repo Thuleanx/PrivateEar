@@ -1,12 +1,16 @@
 using UnityEngine;
+using UnityEngine.Events;
 using NaughtyAttributes;
 
 namespace PrivateEar {
 	[RequireComponent(typeof(Collider2D))]
 	public class CObject : MonoBehaviour {
 		public static CObject HoveredObject = null;
+		public static bool CanInteract = true;
 
 		[SerializeField, ReadOnly] Marker _matchedMarker;
+		[TextArea] public string description;
+
 		public SpriteRenderer Sprite { get; private set; }
 		public CrimeMarker CrimeMarker { get; private set; }
 
@@ -15,6 +19,8 @@ namespace PrivateEar {
 		[Header("Sprite")]
 		[SerializeField] string spriteOutlineFieldName = "_Outline";
 		[SerializeField] float outlineThicknessOnHover;
+
+		public UnityEvent<CObject> OnClicked;
 
 		public Marker MatchedMarker {
 			get => _matchedMarker;
@@ -39,9 +45,11 @@ namespace PrivateEar {
 		}
 
 		public void OnHoverEnter() {
-			HoveredObject = this;
-			Sprite.material.SetFloat(spriteOutlineFieldName, outlineThicknessOnHover);
-			hover = true;
+			if (CanInteract) {
+				HoveredObject = this;
+				Sprite.material.SetFloat(spriteOutlineFieldName, outlineThicknessOnHover);
+				hover = true;
+			}
 		}
 
 		public void OnHoverExit() {
@@ -51,6 +59,17 @@ namespace PrivateEar {
 		}
 
 		private void OnMouseEnter() => OnHoverEnter();
+		private void OnMouseOver() {
+			if (CanInteract && HoveredObject == null) OnHoverEnter();
+		}
 		private void OnMouseExit() => OnHoverExit();
+
+		private void OnMouseDown() {
+			if (CanInteract) {
+				// when object is clicked
+				OnClicked?.Invoke(this);
+				OnHoverExit();
+			}
+		}
 	}
 }

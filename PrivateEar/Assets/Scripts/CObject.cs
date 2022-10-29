@@ -6,7 +6,10 @@ namespace PrivateEar {
 	[RequireComponent(typeof(Collider2D))]
 	public class CObject : MonoBehaviour {
 		public static CObject HoveredObject = null;
-		public static bool CanInteract = true;
+		public static int BlockingInteract = 0;
+		public bool InteractOverride = false;
+
+		bool interactible => BlockingInteract == 0 || InteractOverride;
 
 		[SerializeField, ReadOnly] Marker _matchedMarker;
 		[TextArea] public string description;
@@ -45,7 +48,7 @@ namespace PrivateEar {
 		}
 
 		public void OnHoverEnter() {
-			if (CanInteract) {
+			if (interactible) {
 				HoveredObject = this;
 				Sprite.material.SetFloat(spriteOutlineFieldName, outlineThicknessOnHover);
 				hover = true;
@@ -60,12 +63,13 @@ namespace PrivateEar {
 
 		private void OnMouseEnter() => OnHoverEnter();
 		private void OnMouseOver() {
-			if (CanInteract && HoveredObject == null) OnHoverEnter();
+			if (interactible && !hover) OnHoverEnter();
+			if (!interactible && hover) OnHoverExit();
 		}
 		private void OnMouseExit() => OnHoverExit();
 
 		private void OnMouseDown() {
-			if (CanInteract) {
+			if (interactible) {
 				// when object is clicked
 				OnClicked?.Invoke(this);
 				OnHoverExit();

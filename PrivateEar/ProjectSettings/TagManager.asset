@@ -47,3 +47,6 @@ TagManager:
   - name: Overlay UI
     uniqueID: 2399029123
     locked: 0
+  - name: Tutorial
+    uniqueID: 3193433307
+    locked: 0

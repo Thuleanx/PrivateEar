@@ -21,7 +21,8 @@ namespace PrivateEar {
 		}
 
 		private void ActivateZoomedView(CObject obj) {
-			CObject.CanInteract = false;
+			CObject.BlockingInteract++;
+			Debug.Log(CObject.BlockingInteract);
 			zoomedPreviewObj.SetActive(true);
 
 			crimeObjectImage.sprite = obj.Sprite.sprite;
@@ -32,7 +33,8 @@ namespace PrivateEar {
 		public void DeactivateZoomedView() {
 			trigger.enabled = false;
 			slider.slideOut(() => {
-				CObject.CanInteract = true;
+				// should only be called once per deactivation
+				CObject.BlockingInteract--;
 				zoomedPreviewObj.SetActive(false);
 			});
 		}

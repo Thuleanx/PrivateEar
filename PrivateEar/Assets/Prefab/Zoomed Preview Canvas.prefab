@@ -255,7 +255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 739401810938566882}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739401810948400685}
+        m_TargetAssemblyTypeName: PrivateEar.ZoomedPreview, Assembly-CSharp
+        m_MethodName: OnObjectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &739401810948400694
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +387,12 @@ MonoBehaviour:
   flavourText: {fileID: 739401810742742461}
   slider: {fileID: 739401811718264169}
   trigger: {fileID: 739401812300045419}
+  OnObjectClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &739401811283303072
 GameObject:
   m_ObjectHideFlags: 0

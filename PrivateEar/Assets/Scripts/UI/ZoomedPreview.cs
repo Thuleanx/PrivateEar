@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using NaughtyAttributes;
@@ -11,6 +12,10 @@ namespace PrivateEar {
 		[SerializeField, Required] TMP_Text flavourText;
 		[SerializeField] SlideIn slider;
 		[SerializeField] EventTrigger trigger;
+		[Space]
+		public UnityEvent OnObjectClicked;
+		public UnityEvent OnDeactivate;
+		public bool Active;
 
 		bool exiting;
 
@@ -20,9 +25,11 @@ namespace PrivateEar {
 			if (zoomedPreviewObj.activeInHierarchy) zoomedPreviewObj.SetActive(false);
 		}
 
+		public void OnObjectClick() => OnObjectClicked?.Invoke();
+
 		private void ActivateZoomedView(CObject obj) {
+			Active = true;
 			CObject.BlockingInteract++;
-			Debug.Log(CObject.BlockingInteract);
 			zoomedPreviewObj.SetActive(true);
 
 			crimeObjectImage.sprite = obj.Sprite.sprite;
@@ -31,7 +38,9 @@ namespace PrivateEar {
 		}
 
 		public void DeactivateZoomedView() {
+			Active = false;
 			trigger.enabled = false;
+			OnDeactivate?.Invoke();
 			slider.slideOut(() => {
 				// should only be called once per deactivation
 				CObject.BlockingInteract--;

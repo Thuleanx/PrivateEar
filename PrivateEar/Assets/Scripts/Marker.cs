@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using FMODUnity;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
@@ -17,9 +18,11 @@ namespace PrivateEar {
 		[SerializeField, ReadOnly] CObject _matchedObj;
 
 		// juice objects
-		[SerializeField, Required] RectTransform markerObj;
-		[SerializeField] Vector2 mouseHoverOffsetSS;
+		[Required] public RectTransform markerObj;
+		public Vector2 mouseHoverOffsetSS;
 		Vector2 markerObjPos;
+
+		[SerializeField] public UnityEvent OnClicked;
 
 		public CObject MatchedObject {
 			get => _matchedObj;
@@ -39,6 +42,7 @@ namespace PrivateEar {
 		}
 
 		public void OnClick() {
+			OnClicked?.Invoke();
 			try {
 				RuntimeManager.PlayOneShot(sound);
 			} catch (Exception e) {

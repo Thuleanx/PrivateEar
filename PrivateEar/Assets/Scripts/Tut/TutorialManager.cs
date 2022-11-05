@@ -19,10 +19,15 @@ namespace PrivateEar {
 		[SerializeField, Required] Light2D cobjectSpotLight;
 		[SerializeField, Required] Light2D zoomedPreviewObjectHighlight;
 		[SerializeField, Required] Light2D zoomedPreviewCloseHighlight;
+		[SerializeField, Required] Light2D confirmButtonHighlight;
 
 		[Header("Lighting Animations")]
 		[SerializeField] float dimDuration = 2f;
 		[SerializeField] float spotLightPopDuration = .5f;
+
+		[Header("Arrow Indicator")]
+		[SerializeField] SpriteRenderer arrow;
+		[SerializeField, Range(0, 2)] float endOffset = 1;
 
 		private void Start() {
 			raycastBlocker.SetActive(false);
@@ -32,7 +37,12 @@ namespace PrivateEar {
 		public void Tutorial() {
 			StopAllCoroutines();
 			StartCoroutine(
-				WaitForPlayerClickMarker(WaitForPlayerClickCObject(WaitForZoomedPreviewTutorial(null)))
+				WaitForPlayerClickMarker(
+				WaitForPlayerClickCObject(
+				WaitForZoomedPreviewTutorial(
+				WaitForPlayerDragDropMarker(
+				WaitForPlayerConfirmChoices(null)
+				))))
 			);
 		}
 
@@ -43,6 +53,7 @@ namespace PrivateEar {
 			// block interactions with everything else but the object
 			obj.InteractOverride = true;
 			BlockAllInteractions();
+			DisableAllMarkers();
 
 			// dim the light
 			yield return WaitForDimGlobalLight();
@@ -58,6 +69,7 @@ namespace PrivateEar {
 
 			obj.InteractOverride = false;
 			AllowInteractions();
+			EnableAllMarkers();
 
 			cobjectSpotLight.gameObject.SetActive(false);
 			globalLight.intensity = 1f;
@@ -66,23 +78,21 @@ namespace PrivateEar {
 		}
 		public IEnumerator WaitForPlayerClickMarker(IEnumerator OnComplete) {
 			List<Light2D> markerSpotlights = new List<Light2D>();
-			List<UnityEvent> markerClickedEvents = new List<UnityEvent>();
+			List<UnityEvent<Marker>> markerClickedEvents = new List<UnityEvent<Marker>>();
 
 			BlockAllCObjectInteractions();
 			yield return WaitForDimGlobalLight();
 
 			foreach (var marker in FindObjectsOfType<Marker>()) {
-				// Vector2 offset = - (Vector2) Camera.main.ScreenToWorldPoint(marker.mouseHoverOffsetSS + (Vector2) Camera.main.WorldToScreenPoint(Vector3.zero));
-				Vector2 offset = Vector2.down * 0.75f;
-				GameObject spotLightObj = Instantiate(markerSpotlightPrefab, (Vector2) marker.markerObj.transform.position + offset, 
-					Quaternion.identity);
-				Light2D spotLight = spotLightObj.GetComponent<Light2D>();
+				Light2D spotLight = InstantiateMarkerLight(marker);
 				markerSpotlights.Add(spotLight);
 				FadeinPopupLight(spotLight);
 				markerClickedEvents.Add(marker.OnClicked);
 			}
 
 			yield return WaitForEvents(markerClickedEvents);
+			yield return null; // wait for at least 1 frame, kinda bad design but whatever
+			while (SpectrogramManager.Instance.playing) yield return null;
 
 			foreach (var markerSpotlight in markerSpotlights) 
 				Destroy(markerSpotlight.gameObject);
@@ -116,10 +126,63 @@ namespace PrivateEar {
 			}
 		}
 		public IEnumerator WaitForPlayerDragDropMarker(IEnumerator OnComplete) {
+			Marker marker = FindObjectOfType<Marker>();
+			CObject cobject = FindObjectOfType<CObject>();
+			BlockAllCObjectInteractions();
+			cobject.InteractOverride = true;
+
+			yield return WaitForDimGlobalLight();
+
+			DisableAllMarkers();
+			marker.SetInteractable(true);
+
+			cobjectSpotLight.gameObject.SetActive(true);
+			cobjectSpotLight.transform.position = cobject.transform.position;
+			Light2D markerSpotlight = InstantiateMarkerLight(marker);
+			arrow.gameObject.SetActive(true);
+
+			FadeinPopupLight(cobjectSpotLight);
+			FadeinPopupLight(markerSpotlight);
+
+			Vector2 markerToObjectDisplacement = (cobject.transform.position - markerSpotlight.transform.position);
+
+			Quaternion markerToObjectRotation = Quaternion.LookRotation(Vector3.forward, markerToObjectDisplacement.normalized);
+			arrow.transform.position = markerSpotlight.transform.position + (Vector3) (endOffset * markerToObjectDisplacement.normalized);
+			arrow.transform.rotation = markerToObjectRotation;
+			arrow.size = new Vector2(arrow.size.x, markerToObjectDisplacement.magnitude - 2*endOffset);
+
+			yield return WaitForEvent(marker.OnCObjectAssigned);
+
+			arrow.gameObject.SetActive(false);
+			Destroy(markerSpotlight.gameObject);
+			cobjectSpotLight.gameObject.SetActive(false);
+
+			EnableAllMarkers();
+			UnblockCObjectInteractions();
+			cobject.InteractOverride = false;
+			globalLight.intensity = 1;
+
 			yield return OnComplete;
 		}
-
 		public IEnumerator WaitForPlayerConfirmChoices(IEnumerator OnComplete) {
+			while (!GameMaster.Instance.IsAllMatched) yield return null;
+			BlockAllCObjectInteractions();
+
+			confirmButtonHighlight.gameObject.SetActive(true);
+			FadeinPopupLight(confirmButtonHighlight);
+
+			yield return WaitForDimGlobalLight();
+			DisableAllMarkers();
+
+			// wait for player to confirm choice
+			SubmitButton submitButton = FindObjectOfType<SubmitButton>();
+			yield return WaitForEvent(submitButton.OnClicked);
+
+			confirmButtonHighlight.gameObject.SetActive(false);
+
+			globalLight.intensity = 1;
+			UnblockCObjectInteractions();
+			EnableAllMarkers();
 			yield return OnComplete;
 		}
 
@@ -153,6 +216,13 @@ namespace PrivateEar {
 			yield return WaitForEvents(new List<UnityEvent>{unityEvent});
 		}
 
+		public Light2D InstantiateMarkerLight(Marker marker) {
+			// Vector2 offset = - (Vector2) Camera.main.ScreenToWorldPoint(marker.mouseHoverOffsetSS + (Vector2) Camera.main.WorldToScreenPoint(Vector3.zero));
+			Vector2 offset = Vector2.down * 0.75f;
+			GameObject spotLightObj = Instantiate(markerSpotlightPrefab, (Vector2) marker.markerObj.transform.position + offset, 
+				Quaternion.identity);
+			return spotLightObj.GetComponent<Light2D>();
+		}
 		public void FadeinPopupLight(Light2D light) {
 			light.intensity = 0;
 			DOVirtual.Float(0, 1, spotLightPopDuration, (x) => light.intensity = x);
@@ -162,6 +232,12 @@ namespace PrivateEar {
 		public void BlockAllCObjectInteractions() => CObject.BlockingInteract++;
 		public void UnblockCObjectInteractions() => CObject.BlockingInteract--;
 
+		public void DisableAllMarkers() {
+			foreach (Marker otherMarker in FindObjectsOfType<Marker>()) otherMarker.SetInteractable(false);
+		}
+		public void EnableAllMarkers() {
+			foreach (Marker otherMarker in FindObjectsOfType<Marker>()) otherMarker.SetInteractable(true);
+		}
 		public void BlockAllInteractions() {
 			BlockAllCanvasInteractions();
 			BlockAllCObjectInteractions();

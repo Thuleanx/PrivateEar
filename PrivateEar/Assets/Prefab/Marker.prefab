@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctMatching: {fileID: 0}
-  sound:
+  sfxReference:
     Guid:
       Data1: 1108861713
       Data2: 1195041008
@@ -72,7 +72,14 @@ MonoBehaviour:
   _matchedObj: {fileID: 0}
   markerObj: {fileID: 3966100937989255264}
   mouseHoverOffsetSS: {x: 0, y: 25}
+  OnClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCObjectAssigned:
+    m_PersistentCalls:
+      m_Calls: []
   hover: 0
+  dragging: 0
 --- !u!1 &3966100937712928294
 GameObject:
   m_ObjectHideFlags: 0

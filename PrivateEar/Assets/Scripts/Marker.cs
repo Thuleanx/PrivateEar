@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 using FMODUnity;
 using UnityEngine.EventSystems;
@@ -13,16 +14,21 @@ namespace PrivateEar {
 		public Canvas canvas { get; private set;  }
 
 		[SerializeField, Required] CObject correctMatching;
-		[SerializeField] EventReference sound;
+		[SerializeField] EventReference sfxReference;
+		[HideInInspector]public FMOD.Studio.EventInstance sfxInstance;
 
 		[SerializeField, ReadOnly] CObject _matchedObj;
 
 		// juice objects
 		[Required] public RectTransform markerObj;
+		Button markerButton;
 		public Vector2 mouseHoverOffsetSS;
 		Vector2 markerObjPos;
 
-		[SerializeField] public UnityEvent OnClicked;
+		[SerializeField] public UnityEvent<Marker> OnClicked;
+
+		[Space]
+		public UnityEvent OnCObjectAssigned;
 
 		public CObject MatchedObject {
 			get => _matchedObj;
@@ -34,42 +40,60 @@ namespace PrivateEar {
 			}
 		}
 		public bool hover;
+		public bool Interactible => markerButton.interactable;
+		public bool dragging;
 
-		private void Awake() { canvas = GetComponentInParent<Canvas>(); }
+		private void Awake() { 
+			canvas = GetComponentInParent<Canvas>();
+			markerButton = markerObj.GetComponentInChildren<Button>();
+			sfxInstance = FMODUnity.RuntimeManager.CreateInstance(sfxReference);
+		}
 		private void Start() {
 			GameMaster.Instance?.RegisterMarker(this);
 			markerObjPos = markerObj.anchoredPosition;
 		}
+		public void SetInteractable(bool interactible) {
+			markerButton.interactable = interactible;
+			if (!interactible) ForceEndDrag();
+		}
 
 		public void OnClick() {
-			OnClicked?.Invoke();
-			try {
-				RuntimeManager.PlayOneShot(sound);
-			} catch (Exception e) {
-				Debug.LogError(e);
-			}
+			OnClicked?.Invoke(this);
 		}
 
 		public void OnBeginDrag(PointerEventData eventData) {
-			Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position / canvas.scaleFactor + mouseHoverOffsetSS);
-			markerObj.position = pointerPosWS;
-			InputManager.Instance.DraggingCnt++;
+			if (Interactible) {
+				Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position / canvas.scaleFactor + mouseHoverOffsetSS);
+				markerObj.position = pointerPosWS;
+				InputManager.Instance.DraggingCnt++;
+				dragging = true;
+			}
 		}
 
 		public void OnDrag(PointerEventData eventData) {
-			markerObj.anchoredPosition += eventData.delta / canvas.scaleFactor;
+			if (Interactible) {
+				markerObj.anchoredPosition += eventData.delta / canvas.scaleFactor;
+			}
 		}
 
 		public void OnEndDrag(PointerEventData eventData) {
-			InputManager.Instance.DraggingCnt--;
-			if (CObject.HoveredObject) {
-				// then we have a matching
-				MatchedObject = CObject.HoveredObject;
-				markerObj.anchoredPosition = markerObjPos;
-			} else {
-				// then we didn't drop it on any matchable element
-				MatchedObject = null;
-				markerObj.anchoredPosition = markerObjPos;
+			ForceEndDrag();
+		}
+
+		void ForceEndDrag() {
+			if (dragging) {
+				InputManager.Instance.DraggingCnt--;
+				if (CObject.HoveredObject) {
+					// then we have a matching
+					MatchedObject = CObject.HoveredObject;
+					markerObj.anchoredPosition = markerObjPos;
+					OnCObjectAssigned?.Invoke();
+				} else {
+					// then we didn't drop it on any matchable element
+					MatchedObject = null;
+					markerObj.anchoredPosition = markerObjPos;
+				}
+				dragging = false;
 			}
 		}
 

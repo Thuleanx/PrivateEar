@@ -7,6 +7,8 @@ namespace PrivateEar {
 		public UnityEvent OnWin;
 
 		public FailMessage FailMessageGenerator;
+		[HideInInspector]
+		public UnityEvent OnClicked;
 
 		public void Appear() {
 			gameObject.SetActive(true);
@@ -17,6 +19,7 @@ namespace PrivateEar {
 		}
 
 		public void OnClick() {
+			OnClicked?.Invoke();
 			if (GameMaster.Instance.IsCorrectMatching) {
 				OnWin?.Invoke();
 				Disappear();

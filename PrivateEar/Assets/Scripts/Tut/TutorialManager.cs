@@ -126,18 +126,18 @@ namespace PrivateEar {
 			yield return WaitForEvents(new List<UnityEvent>(){zoomedPreview.OnObjectClicked, zoomedPreview.OnDeactivate});
 			zoomedPreviewObjectHighlight.gameObject.SetActive(false);
 			objectZoomTutorialText.gameObject.SetActive(false);
-			backToSceneTutorialText.gameObject.SetActive(true);
 
 			if (!zoomedPreview.Active) {
 				// do it again
 				globalLight.intensity = 1;
 				yield return WaitForPlayerClickCObject(WaitForZoomedPreviewTutorial(OnComplete));
-				backToSceneTutorialText.gameObject.SetActive(false);
 			} else {
-				zoomedPreviewCloseHighlight.gameObject.SetActive(true);
-				FadeinPopupLight(zoomedPreviewCloseHighlight);
+				// they click on the object
+				backToSceneTutorialText.gameObject.SetActive(true);
+				// zoomedPreviewCloseHighlight.gameObject.SetActive(true);
+				// FadeinPopupLight(zoomedPreviewCloseHighlight);
 				yield return WaitForEvent(zoomedPreview.OnDeactivate);
-				zoomedPreviewCloseHighlight.gameObject.SetActive(false);
+				// zoomedPreviewCloseHighlight.gameObject.SetActive(false);
 				backToSceneTutorialText.gameObject.SetActive(false);
 
 				globalLight.intensity = 1;
@@ -242,7 +242,7 @@ namespace PrivateEar {
 
 		public Light2D InstantiateMarkerLight(Marker marker) {
 			// Vector2 offset = - (Vector2) Camera.main.ScreenToWorldPoint(marker.mouseHoverOffsetSS + (Vector2) Camera.main.WorldToScreenPoint(Vector3.zero));
-			Vector2 offset = Vector2.down * 0.75f;
+			Vector2 offset = Vector2.up* 0.1f;
 			GameObject spotLightObj = Instantiate(markerSpotlightPrefab, (Vector2) marker.markerObj.transform.position + offset, 
 				Quaternion.identity);
 			return spotLightObj.GetComponent<Light2D>();

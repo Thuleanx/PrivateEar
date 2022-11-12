@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: a978ea58315dc10489a9e6b55e921741
-=======
-guid: 9391de998851f4021bbbd1595b0826f5
->>>>>>> 6ec59de (hi)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,15 +38,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> 6ec59de (hi)
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,27 +62,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,44 +119,35 @@ TextureImporter:
       name: cassette_0
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1239
-        width: 2394
-        height: 352
+        x: 86
+        y: 1235
+        width: 2395
+        height: 356
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bf3e49ffb8c1384791609e6b1cdb879
-      internalID: 1141426034
+      spriteID: a2779869760815b4d95d3407fb2d9eda
+      internalID: 1025083731
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> 6ec59de (hi)
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b1ec2d16b7c58114981bc6b5b55b0a05
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
     nameFileIdTable:
-      cassette_0: 1141426034
-=======
-    nameFileIdTable: {}
->>>>>>> 6ec59de (hi)
+      cassette_0: 1025083731
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

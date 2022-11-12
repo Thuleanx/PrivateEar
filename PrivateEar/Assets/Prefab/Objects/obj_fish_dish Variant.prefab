@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.067
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -59,5 +63,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: obj_fish_dish Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1400732965613826524, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+--- !u!1 &973289784744356783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8073612297800937114, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+  m_PrefabInstance: {fileID: 9046300623641920821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1999407773816406256
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973289784744356783}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.6774354, y: 0.056032777}
+      - {x: 0.31446075, y: 0.09465253}
+      - {x: -0.026715279, y: 0.105039954}
+      - {x: -0.5837223, y: 0.07525876}
+      - {x: -0.7381717, y: -0.0067021847}
+      - {x: -0.68128854, y: -0.07434833}
+      - {x: -0.37396276, y: -0.18788803}
+      - {x: 0.40361643, y: -0.18931746}
+      - {x: 0.71729803, y: -0.038280904}

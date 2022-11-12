@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GrayscaleMaterial
+  m_Name: GrayScaleMaterial
   m_Shader: {fileID: -6465566751694194690, guid: a6cc2a20867084dd2aa6370f1a1755b1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []

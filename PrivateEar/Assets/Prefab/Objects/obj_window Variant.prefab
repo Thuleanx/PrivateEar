@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.224
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 454ff84f76b8b45768ee3d8a212b4f56, type: 3}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: description
+      value: "A broken window. Current theory stands that the culprit broke in through
+        here. On the other side\u2026\n\nThere are glass shards littering the boardwalk.
+        Better watch my step. Thankfully, there\u2019s no glass on the inside."
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -15,6 +15,11 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 4b204c1a80f4c8a4ab002516635084d0, type: 3}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: description
+      value: "There\u2019s a pot, a kettle, two teacups, two rice servings\u2026\n\u2026Looks
+        like there\u2019s two of almost everything but the main deal."
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0

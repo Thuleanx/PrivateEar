@@ -28,6 +28,16 @@ namespace PrivateEar {
 		[Header("Arrow Indicator")]
 		[SerializeField] SpriteRenderer arrow;
 		[SerializeField, Range(0, 2)] float endOffset = 1;
+		
+		[Header("Tutorial Text")]
+		[SerializeField] GameObject introTutorialText;
+		[SerializeField] GameObject markerTutorialText;
+		[SerializeField] GameObject objectClickTutorialText;
+		[SerializeField] GameObject objectZoomTutorialText;
+		[SerializeField] GameObject backToSceneTutorialText;
+		[SerializeField] GameObject dragTutorialText;
+		[SerializeField] GameObject confirmTutorialText;
+		[SerializeField] GameObject pauseTutorialText;
 
 		private void Start() {
 			raycastBlocker.SetActive(false);
@@ -58,6 +68,8 @@ namespace PrivateEar {
 			// dim the light
 			yield return WaitForDimGlobalLight();
 
+			objectClickTutorialText.gameObject.SetActive(true);
+
 			// turns on the spotlight
 			cobjectSpotLight.transform.position = obj.transform.position;
 			cobjectSpotLight.intensity = 0;
@@ -67,6 +79,7 @@ namespace PrivateEar {
 
 			yield return WaitForEvent(obj.OnClicked);
 
+			objectClickTutorialText.gameObject.SetActive(false);
 			obj.InteractOverride = false;
 			AllowInteractions();
 			EnableAllMarkers();
@@ -82,6 +95,7 @@ namespace PrivateEar {
 
 			BlockAllCObjectInteractions();
 			yield return WaitForDimGlobalLight();
+			markerTutorialText.gameObject.SetActive(true);
 
 			foreach (var marker in FindObjectsOfType<Marker>()) {
 				Light2D spotLight = InstantiateMarkerLight(marker);
@@ -91,6 +105,7 @@ namespace PrivateEar {
 			}
 
 			yield return WaitForEvents(markerClickedEvents);
+			markerTutorialText.gameObject.SetActive(false);
 			yield return null; // wait for at least 1 frame, kinda bad design but whatever
 			while (SpectrogramManager.Instance.playing) yield return null;
 
@@ -105,20 +120,25 @@ namespace PrivateEar {
 		public IEnumerator WaitForZoomedPreviewTutorial(IEnumerator OnComplete) {
 			yield return WaitForDimGlobalLight();
 
+			objectZoomTutorialText.gameObject.SetActive(true);
 			zoomedPreviewObjectHighlight.gameObject.SetActive(true);
 			FadeinPopupLight(zoomedPreviewObjectHighlight);
 			yield return WaitForEvents(new List<UnityEvent>(){zoomedPreview.OnObjectClicked, zoomedPreview.OnDeactivate});
 			zoomedPreviewObjectHighlight.gameObject.SetActive(false);
+			objectZoomTutorialText.gameObject.SetActive(false);
+			backToSceneTutorialText.gameObject.SetActive(true);
 
 			if (!zoomedPreview.Active) {
 				// do it again
 				globalLight.intensity = 1;
 				yield return WaitForPlayerClickCObject(WaitForZoomedPreviewTutorial(OnComplete));
+	
 			} else {
 				zoomedPreviewCloseHighlight.gameObject.SetActive(true);
 				FadeinPopupLight(zoomedPreviewCloseHighlight);
 				yield return WaitForEvent(zoomedPreview.OnDeactivate);
 				zoomedPreviewCloseHighlight.gameObject.SetActive(false);
+				backToSceneTutorialText.gameObject.SetActive(false);
 
 				globalLight.intensity = 1;
 
@@ -136,6 +156,7 @@ namespace PrivateEar {
 			DisableAllMarkers();
 			marker.SetInteractable(true);
 
+			dragTutorialText.gameObject.SetActive(true);
 			cobjectSpotLight.gameObject.SetActive(true);
 			cobjectSpotLight.transform.position = cobject.transform.position;
 			Light2D markerSpotlight = InstantiateMarkerLight(marker);
@@ -153,6 +174,7 @@ namespace PrivateEar {
 
 			yield return WaitForEvent(marker.OnCObjectAssigned);
 
+			dragTutorialText.gameObject.SetActive(false);
 			arrow.gameObject.SetActive(false);
 			Destroy(markerSpotlight.gameObject);
 			cobjectSpotLight.gameObject.SetActive(false);
@@ -168,6 +190,7 @@ namespace PrivateEar {
 			while (!GameMaster.Instance.IsAllMatched) yield return null;
 			BlockAllCObjectInteractions();
 
+			confirmTutorialText.gameObject.SetActive(true);
 			confirmButtonHighlight.gameObject.SetActive(true);
 			FadeinPopupLight(confirmButtonHighlight);
 
@@ -178,6 +201,7 @@ namespace PrivateEar {
 			SubmitButton submitButton = FindObjectOfType<SubmitButton>();
 			yield return WaitForEvent(submitButton.OnClicked);
 
+			confirmTutorialText.gameObject.SetActive(false);
 			confirmButtonHighlight.gameObject.SetActive(false);
 
 			globalLight.intensity = 1;

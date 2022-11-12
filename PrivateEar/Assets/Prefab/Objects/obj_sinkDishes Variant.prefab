@@ -15,6 +15,11 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2a5e3ea57dc499f4b84c9f4764d1564c, type: 3}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: description
+      value: "Some of the dishes are still dirty. Poor guy couldn\u2019t even finish
+        cleaning\u2026 let\u2019s see what\u2019s in here.\nAnother bowl and plate."
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -71,38 +76,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8073612297800937114, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
   m_PrefabInstance: {fileID: 4312306791682552972}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &6965083526971419744
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5463816008623479318}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.652792, y: -0.031832933}
-      - {x: -1.3616838, y: 0.08790997}
-      - {x: -1.5577512, y: 0.013697147}
-      - {x: -1.4147468, y: -0.30087185}
-      - {x: -0.16662878, y: -0.54579437}
-      - {x: -0.06500709, y: -0.46156335}
-      - {x: -0.18606567, y: -0.23848563}
 --- !u!60 &3402859521988702143
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +125,35 @@ PolygonCollider2D:
       - {x: 0.85698366, y: 0.2553649}
       - {x: 0.84109354, y: 0.34611917}
       - {x: 0.76585484, y: 0.36262816}
+--- !u!60 &6965083526971419744
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5463816008623479318}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.652792, y: -0.031832933}
+      - {x: -1.3616838, y: 0.08790997}
+      - {x: -1.5577512, y: 0.013697147}
+      - {x: -1.4147468, y: -0.30087185}
+      - {x: -0.16662878, y: -0.54579437}
+      - {x: -0.06500709, y: -0.46156335}
+      - {x: -0.18606567, y: -0.23848563}

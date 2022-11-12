@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: description
+      value: Some footsteps leading out the door. Maybe the murderer left them?
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -75,6 +79,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8073612297800937114, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
   m_PrefabInstance: {fileID: 6269847549153056892}
   m_PrefabAsset: {fileID: 0}
+--- !u!60 &2154793332382979407
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812993553162663654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.7627964, y: 0.17852688}
+      - {x: -0.8001738, y: -0.009513587}
+      - {x: -0.6241312, y: -0.22284794}
+      - {x: -0.26925462, y: -0.2557801}
+      - {x: -0.16662872, y: -0.18872094}
+      - {x: -0.36497712, y: 0.08269304}
 --- !u!60 &4706660167828690783
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -109,37 +144,6 @@ PolygonCollider2D:
       - {x: -0.5542554, y: 0.45672238}
       - {x: -0.636042, y: 0.56569326}
       - {x: -0.80086064, y: 0.6024005}
---- !u!60 &2154793332382979407
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2812993553162663654}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.7627964, y: 0.17852688}
-      - {x: -0.8001738, y: -0.009513587}
-      - {x: -0.6241312, y: -0.22284794}
-      - {x: -0.26925462, y: -0.2557801}
-      - {x: -0.16662872, y: -0.18872094}
-      - {x: -0.36497712, y: 0.08269304}
 --- !u!60 &7152795523712032692
 PolygonCollider2D:
   m_ObjectHideFlags: 0

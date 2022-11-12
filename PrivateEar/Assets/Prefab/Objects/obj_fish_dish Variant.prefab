@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a7d0a0d5958224e05bc4770838051b76, type: 3}
+      objectReference: {fileID: 462546947, guid: 1d450e96b3820a54f8ab1e3b5e9cfb61, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: A dish consisting of fish. A fish dish, even.

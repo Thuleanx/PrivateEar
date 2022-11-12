@@ -34,7 +34,7 @@ PrefabInstance:
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d4801a8f7b4d6df4c9e67d35e7706dae, type: 3}
+      objectReference: {fileID: 21300000, guid: ce6d62adbefa69645b46f4eeb20492f2, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: Some debris. I wonder what it's from?

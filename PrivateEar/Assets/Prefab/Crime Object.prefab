@@ -131,9 +131,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b85095ce26a07c4aafb76d384fc40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractOverride: 0
   _matchedMarker: {fileID: 0}
+  description: 
   spriteOutlineFieldName: _Thickness
-  outlineThicknessOnHover: 0.02
+  outlineThicknessOnHover: 0.01
+  OnClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1400732965613826524
 BoxCollider2D:
   m_ObjectHideFlags: 0

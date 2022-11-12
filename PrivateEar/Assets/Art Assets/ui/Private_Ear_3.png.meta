@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce87462ea1f1cef4cbbea6139e12abfb
+guid: bb1c750427d7a8a42ba1a5ae6bc79a9b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,22 +116,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fish on the wall_0
+      name: Private_Ear_3_0
       rect:
         serializedVersion: 2
-        x: 415
-        y: 606
-        width: 520
-        height: 196
+        x: 2595
+        y: 51
+        width: 213
+        height: 213
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448bd5c7c70599642861877342e5c67a
-      internalID: -1148746810
+      spriteID: d54277ea5e078464194eeaae12e10af0
+      internalID: -1676468168
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fish on the wall_0: -1148746810
+      Private_Ear_3_0: -1676468168
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

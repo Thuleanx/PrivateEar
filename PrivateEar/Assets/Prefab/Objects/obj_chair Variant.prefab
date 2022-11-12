@@ -18,7 +18,7 @@ PrefabInstance:
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bb0c6a97e2d2678449dc126fa08823c2, type: 3}
+      objectReference: {fileID: 1038797070, guid: a75a9336bf1ef7b47bb7eb0b16ae63f3, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: "A plastic chair sat in front of the plates. It\u2019s still standing,

@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 454ff84f76b8b45768ee3d8a212b4f56, type: 3}
+      objectReference: {fileID: -1503451583, guid: 61130bce324bd764f848e856b5129bbc, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: "A broken window. Current theory stands that the culprit broke in through

@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4b204c1a80f4c8a4ab002516635084d0, type: 3}
+      objectReference: {fileID: 1437815477, guid: 5312a219eb78e784994e0af062b51ada, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: "There\u2019s a pot, a kettle, two teacups, two rice servings\u2026\n\u2026Looks

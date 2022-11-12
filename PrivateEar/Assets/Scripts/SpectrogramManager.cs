@@ -13,6 +13,7 @@ namespace PrivateEar {
 		public bool playing;
 		[ReorderableList, SerializeField] List<Marker> allMarkers = new List<Marker>();
 		FMOD.Studio.EventInstance instance;
+		[SerializeField, Required] RectTransform timelineMarker;
 
 		public RectTransform rectTransform {get; private set; }
 		public Canvas Canvas {get; private set; }
@@ -26,6 +27,7 @@ namespace PrivateEar {
 		private void Start() {
 			foreach (var marker in allMarkers) marker.OnClicked.AddListener(PlayMarker);
 			allMarkers.Sort((x, y) => x.transform.position.x < y.transform.position.x ? -1 : 1);
+			timelineMarker.gameObject.SetActive(false);
 		}
 
 		void PlayMarker(Marker marker) {
@@ -46,15 +48,19 @@ namespace PrivateEar {
 			} else nxtMarkerPos = allMarkers[index+1].transform.position;
 
 			SetMarkersInteratable(false);
+			timelineMarker.gameObject.SetActive(true);
 			while (IsPlaying(marker.sfxInstance)) {
 				int timelinePosInt = 0;
 				marker.sfxInstance.getTimelinePosition(out timelinePosInt);
-				float timelinePosition = timelinePosInt;
+				float timelinePosition = (float) timelinePosInt / GetTrackDuration(marker.sfxInstance);
 
 				Vector2 timelineMarkerPos = Vector2.Lerp(allMarkers[index].transform.position, nxtMarkerPos, timelinePosition);
+				timelineMarker.transform.position = timelineMarkerPos;
 
 				yield return null;
 			}
+			timelineMarker.gameObject.SetActive(false);
+
 			SetMarkersInteratable(true);
 
 			playing = false;
@@ -64,6 +70,17 @@ namespace PrivateEar {
 			FMOD.Studio.PLAYBACK_STATE state;
 			instance.getPlaybackState(out state);
 			return state != FMOD.Studio.PLAYBACK_STATE.STOPPED;
+		}
+		public int GetTrackDuration(FMOD.Studio.EventInstance track) {
+			FMOD.Studio.EventDescription description;
+			if (track.getDescription(out description) != FMOD.RESULT.OK) {
+				Debug.LogError(string.Format("Cannot seem to get duration of track"));
+				return -1;
+			}
+			int length;
+			if (description.getLength(out length) != FMOD.RESULT.OK)
+				return -1;
+			return length;
 		}
 		public void SetMarkersInteratable(bool interactable) {
 			foreach (Marker marker in allMarkers) marker.SetInteractable(interactable);

@@ -25,7 +25,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
-      value: Body
+      value: "The body\u2019s been removed now, but autopsy states that he died from
+        a fatal stab wound through the chest. He also sustained blunt force trauma
+        to the back of the head."
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder

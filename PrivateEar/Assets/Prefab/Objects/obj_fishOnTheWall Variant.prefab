@@ -8,13 +8,23 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.82
       objectReference: {fileID: 0}
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8dc1018943d68984c8a0289ab28817ad, type: 3}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: description
+      value: "A taxidermy fish. If only it could talk, it would be able to tell me
+        who the culprit is\u2026\nWhat do you think, Mr. Fish?\n\u2026\n\u2026I don\u2019t
+        know what I expected.\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0

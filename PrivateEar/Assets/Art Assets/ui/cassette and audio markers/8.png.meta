@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 57eda933f105c7d43a310c9b8ac23869
+=======
+guid: ee357130d1e5e41f4911007df00fa800
+>>>>>>> 6ec59de (hi)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> 6ec59de (hi)
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,6 +84,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -136,6 +145,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> 6ec59de (hi)
     outline: []
     physicsShape: []
     bones: []
@@ -146,8 +160,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable:
       8_0: 1860196848
+=======
+    nameFileIdTable: {}
+>>>>>>> 6ec59de (hi)
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

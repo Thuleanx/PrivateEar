@@ -132,7 +132,7 @@ namespace PrivateEar {
 				// do it again
 				globalLight.intensity = 1;
 				yield return WaitForPlayerClickCObject(WaitForZoomedPreviewTutorial(OnComplete));
-	
+				backToSceneTutorialText.gameObject.SetActive(false);
 			} else {
 				zoomedPreviewCloseHighlight.gameObject.SetActive(true);
 				FadeinPopupLight(zoomedPreviewCloseHighlight);

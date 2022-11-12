@@ -32,6 +32,7 @@ namespace PrivateEar {
 		}
 
 		void FadeOut() {
+			Debug.Log("FADING OUT");
 			fadeCanvas.GetComponent<CanvasGroup>().alpha += fadeSpeed * Time.deltaTime;
 			Debug.Log(fadeCanvas.GetComponent<CanvasGroup>().alpha);
 			Debug.Log(Time.deltaTime);

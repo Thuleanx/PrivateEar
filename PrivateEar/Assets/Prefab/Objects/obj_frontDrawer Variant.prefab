@@ -38,8 +38,8 @@ PrefabInstance:
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: "A tall, wooden cabinet. All the drawers are open \u2013 the perpetrator
-        must\u2019ve been rummaging through this. Let\u2019s take a closer look\u2026\n\u2026\n\u2026\u2026?\nNothing\u2019s
-        out of place\u2026 if it\u2019s a robber, then what did they take?"
+        must've been rummaging through this. Let's take a closer look\u2026\n\u2026\n\u2026\u2026?\nNothing's
+        out of place\u2026 if it's a robber, then what did they take?"
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder

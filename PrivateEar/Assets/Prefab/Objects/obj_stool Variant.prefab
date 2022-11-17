@@ -27,7 +27,7 @@ PrefabInstance:
       propertyPath: description
       value: "A short wooden stool. Looks like one of its legs was broken\u2026.
         not much use now, I suppose. Not that the victim will be sitting any time
-        soon.\n\u2026Maybe that\u2019s too morbid."
+        soon.\n\u2026Maybe that's too morbid."
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: <CloseupSprites>k__BackingField.Array.size

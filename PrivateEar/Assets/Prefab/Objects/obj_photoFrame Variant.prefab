@@ -50,8 +50,8 @@ PrefabInstance:
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
       value: "A picture of the victim. He looks pretty happy about his catch. He
-        even framed it on the wall \u2013 I don\u2019t know if I would ever go that
-        far. It must have meant a lot to him.\n\nWho\u2019s that in the background?"
+        even framed it on the wall \u2013 I don't know if I would ever go that far.
+        It must have meant a lot to him.\n\nWho's that in the background?"
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder

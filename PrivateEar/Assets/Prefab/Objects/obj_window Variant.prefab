@@ -23,7 +23,7 @@ PrefabInstance:
       propertyPath: description
       value: "A broken window. Current theory stands that the culprit broke in through
         here. On the other side\u2026\n\nThere are glass shards littering the boardwalk.
-        Better watch my step. Thankfully, there\u2019s no glass on the inside."
+        Better watch my step. Thankfully, there's no glass on the inside."
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: <CloseupSprites>k__BackingField.Array.size

@@ -53,9 +53,9 @@ PrefabInstance:
       objectReference: {fileID: 1907925866, guid: 5dc57175f5eafab45a329338e721f1e7, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
-      value: "Whatever this was, it\u2019s only shards now\u2026 it\u2019s a shame,
-        it was probably expensive. Definitely more than what I could afford. I wonder
-        how the victim got it\u2026was it a family heirloom?"
+      value: "Whatever this was, it's only shards now\u2026 it's a shame, it was
+        probably expensive. Definitely more than what I could afford. I wonder how
+        the victim got it\u2026was it a family heirloom?"
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: <CloseupSprites>k__BackingField.Array.size

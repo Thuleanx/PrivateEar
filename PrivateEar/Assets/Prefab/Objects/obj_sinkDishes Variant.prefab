@@ -17,8 +17,8 @@ PrefabInstance:
       objectReference: {fileID: 1492208920, guid: b4fe81c2a1348cc4cb49b4c88223c6c8, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
-      value: "Some of the dishes are still dirty. Poor guy couldn\u2019t even finish
-        cleaning\u2026 let\u2019s see what\u2019s in here.\nAnother bowl and plate."
+      value: "Some of the dishes are still dirty. Poor guy couldn't even finish cleaning\u2026
+        let's see what's in here.\nAnother bowl and plate."
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder

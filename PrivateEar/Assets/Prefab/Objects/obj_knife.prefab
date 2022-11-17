@@ -33,9 +33,9 @@ PrefabInstance:
       objectReference: {fileID: 470338581, guid: 77bb620e342f4ee4a8a9c3ad2654f54a, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
-      value: "A kitchen knife. It\u2019s absolutely covered in blood\u2026 the reports
-        say the blood matches with the victim. \u2026No matter what, I don\u2019t
-        think I\u2019ll ever get used to the sight of this."
+      value: "A kitchen knife. It's absolutely covered in blood\u2026 the reports
+        say the blood matches with the victim. \u2026No matter what, I don't think
+        I'll ever get used to the sight of this."
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: <CloseupSprites>k__BackingField.Array.size

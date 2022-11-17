@@ -32,6 +32,7 @@ namespace PrivateEar {
 				CrimeMarker.gameObject.SetActive(false);
 				// configure crime marker object
 				CrimeMarker.gameObject.SetActive(_matchedMarker != null);
+				CrimeMarker.AssignSprite(_matchedMarker.CustomSprite);
 			}
 		}
 

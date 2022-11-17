@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e2a281c06e3c3942bba624fe0b08702, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -473,6 +477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -468070262, guid: 8c0f25ba2d9c97e469bdd8fe137b8770, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -586,6 +594,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 044b6925e055a4b4ebf0f9523f07f67f, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -674,6 +686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1285459984, guid: 57eda933f105c7d43a310c9b8ac23869, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -787,6 +803,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d37821e739529a41aeae750385eb183, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -879,6 +899,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 836070029, guid: c250beadb3dad494a9dea0befd5efc64, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
 --- !u!114 &982315652815997953 stripped
@@ -908,6 +932,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 199f56d8a69606d4f8454197041af414, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -996,6 +1024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1284907014, guid: 420fb0286c723924983c03b91b8f7a53, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -1109,6 +1141,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d37821e739529a41aeae750385eb183, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1197,6 +1233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -507956546, guid: 1d36d511d0a9ca34f887077a1a357b22, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -1310,6 +1350,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 34e02451a573ec644ab541874707578c, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1398,6 +1442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8294074, guid: 6718a7a9c7a3b7546a0910e8eb24ad55, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -1511,6 +1559,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: ddf3666a495a7b048a3c4c23b0f7ad5d, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1599,6 +1651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 621860460, guid: a839853d1c2de9a448e9da591a5308c0, type: 3}
     - target: {fileID: 4726380756006786585, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
       value: 65535
@@ -1712,6 +1768,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: eac1798345f0c9544b1e6bb8dea94948, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1800,6 +1860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -813679280, guid: e8f2404387e68cb4d84c0f0b846ef5e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
 --- !u!114 &982315653695426461 stripped
@@ -1829,6 +1893,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a77060738f7d9e45bd242ede0545693, type: 3}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1921,6 +1989,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -866816017, guid: 64f21c8192a8b24499768618e1605848, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
 --- !u!114 &982315653523997958 stripped

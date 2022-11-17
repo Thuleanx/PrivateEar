@@ -17,5 +17,9 @@ namespace PrivateEar {
 			Sprite.transform.localPosition = initialDropOffset;
 			Sprite.transform.DOLocalMove(new Vector2(0,0), initialDropDuration).SetEase(initialDropEase);
 		}
+
+		public void AssignSprite(Sprite sprite) {
+			Sprite.sprite = sprite;
+		}
 	}
 }

@@ -69,6 +69,7 @@ MonoBehaviour:
       Data3: -2018973516
       Data4: 1334377621
     Path: event:/Prototype/Marker 0
+  <CustomSprite>k__BackingField: {fileID: 21300000, guid: eff6afc87dff9304aaeba83153f61a9a, type: 3}
   _matchedObj: {fileID: 0}
   markerObj: {fileID: 3966100937989255264}
   mouseHoverOffsetSS: {x: 0, y: -5}

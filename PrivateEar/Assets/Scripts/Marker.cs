@@ -16,6 +16,7 @@ namespace PrivateEar {
 		[SerializeField, Required] CObject correctMatching;
 		[SerializeField] EventReference sfxReference;
 		[HideInInspector]public FMOD.Studio.EventInstance sfxInstance;
+		[field:SerializeField] public Sprite CustomSprite {get; private set;}
 
 		[SerializeField, ReadOnly] CObject _matchedObj;
 

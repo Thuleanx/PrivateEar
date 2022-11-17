@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using NaughtyAttributes;
@@ -16,6 +17,8 @@ namespace PrivateEar {
 
 		public SpriteRenderer Sprite { get; private set; }
 		public CrimeMarker CrimeMarker { get; private set; }
+		[field:SerializeField, ReorderableList]
+		public List<Sprite> CloseupSprites { get; private set; }
 
 		public bool hover { get; private set; }
 
@@ -42,6 +45,9 @@ namespace PrivateEar {
 			CrimeMarker.gameObject.SetActive(false);
 			Sprite.material = new Material(Sprite.material);
 			Sprite.material.SetFloat(spriteOutlineFieldName, 0f);
+			// if (CloseupSprites.Count == 0) {
+			// 	CloseupSprites = new List<Sprite>{Sprite.sprite};
+			CloseupSprites.Insert(0, Sprite.sprite);
 		}
 
 		public void Start() {

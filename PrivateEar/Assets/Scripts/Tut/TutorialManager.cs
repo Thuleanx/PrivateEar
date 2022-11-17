@@ -13,6 +13,7 @@ namespace PrivateEar {
 		[SerializeField] GameObject raycastBlocker;
 		[SerializeField] GameObject markerSpotlightPrefab;
 		[SerializeField] ZoomedPreview zoomedPreview;
+		[SerializeField] CObject objToFocus;
 
 		[Header("Tutorial Lights")]
 		[SerializeField, Required] Light2D globalLight;
@@ -58,7 +59,7 @@ namespace PrivateEar {
 
 		public IEnumerator WaitForPlayerClickCObject(IEnumerator OnComplete) {
 			// grab the object
-			CObject obj = FindObjectOfType<CObject>();
+			CObject obj = objToFocus ? objToFocus : FindObjectOfType<CObject>();
 
 			// block interactions with everything else but the object
 			obj.InteractOverride = true;

@@ -16,8 +16,10 @@ namespace PrivateEar {
 		public UnityEvent OnObjectClicked;
 		public UnityEvent OnDeactivate;
 		public bool Active;
-
+	
+		CObject focusObj;
 		bool exiting;
+		int index = 0;
 
 		private void Start() {
 			foreach (CObject obj in FindObjectsOfType<CObject>())
@@ -25,14 +27,21 @@ namespace PrivateEar {
 			if (zoomedPreviewObj.activeInHierarchy) zoomedPreviewObj.SetActive(false);
 		}
 
-		public void OnObjectClick() => OnObjectClicked?.Invoke();
+		public void OnObjectClick() {
+			index = (index+1) % focusObj.CloseupSprites.Count;
+			crimeObjectImage.sprite = focusObj.CloseupSprites[index];
+			OnObjectClicked?.Invoke();
+		}
 
 		private void ActivateZoomedView(CObject obj) {
 			Active = true;
 			CObject.BlockingInteract++;
 			zoomedPreviewObj.SetActive(true);
+			focusObj = obj;
 
-			crimeObjectImage.sprite = obj.Sprite.sprite;
+			index = 0;
+			crimeObjectImage.sprite = obj.CloseupSprites[index];
+
 			flavourText.text = obj.description;
 			slider.slideIn(() => trigger.enabled = true);
 		}

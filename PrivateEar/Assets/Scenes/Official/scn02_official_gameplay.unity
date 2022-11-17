@@ -675,7 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 739401810948400694, guid: 05e0c92040eaac848a1ed6e31a3a2166, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e0c92040eaac848a1ed6e31a3a2166, type: 3}
@@ -3029,6 +3029,7 @@ MonoBehaviour:
   raycastBlocker: {fileID: 178190078}
   markerSpotlightPrefab: {fileID: 7657386852931502301, guid: 5197cbdbbc89196469a39f9c9a4c86dc, type: 3}
   zoomedPreview: {fileID: 928683009}
+  objToFocus: {fileID: 1352913496}
   globalLight: {fileID: 123232796}
   cobjectSpotLight: {fileID: 990101999}
   zoomedPreviewObjectHighlight: {fileID: 743081174}

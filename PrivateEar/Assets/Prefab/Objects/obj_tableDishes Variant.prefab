@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.001
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 1565812273686182513, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.077
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 8073612296577644293, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_Sprite
@@ -24,6 +24,14 @@ PrefabInstance:
       value: "There\u2019s a pot, a kettle, two teacups, two rice servings\u2026\n\u2026Looks
         like there\u2019s two of almost everything but the main deal."
       objectReference: {fileID: 0}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: <CloseupSprites>k__BackingField.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: <CloseupSprites>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b54ee6f59ccdb6a4b8ec8f9305a31cb9, type: 3}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0

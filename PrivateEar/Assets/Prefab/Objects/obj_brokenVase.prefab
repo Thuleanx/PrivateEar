@@ -57,6 +57,18 @@ PrefabInstance:
         it was probably expensive. Definitely more than what I could afford. I wonder
         how the victim got it\u2026was it a family heirloom?"
       objectReference: {fileID: 0}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: <CloseupSprites>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: <CloseupSprites>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 95ffeb52ae8f17a42b5144c4059187fe, type: 3}
+    - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
+      propertyPath: <CloseupSprites>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: ebcaaf2fe1aaf74428a60c7abd9ea177, type: 3}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder
       value: 0

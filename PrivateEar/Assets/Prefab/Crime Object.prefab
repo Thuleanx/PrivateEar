@@ -135,7 +135,7 @@ MonoBehaviour:
   _matchedMarker: {fileID: 0}
   description: 
   spriteOutlineFieldName: _Thickness
-  outlineThicknessOnHover: 0.01
+  outlineThicknessOnHover: 0.005
   OnClicked:
     m_PersistentCalls:
       m_Calls: []

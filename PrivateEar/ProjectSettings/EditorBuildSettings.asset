@@ -9,21 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/scn-1_loading.unity
     guid: 7b0691bd440ae8e4ca5760754ad1776c
   - enabled: 1
-    path: Assets/Scenes/GameloopDemo/scn00_mainMenu_test.unity
-    guid: a860331fdb4aa8749bb39f407f7ae209
-  - enabled: 1
-    path: Assets/Scenes/GameloopDemo/scn02_animatic_test.unity
-    guid: 542e15babc0adff45994f42eb736af26
-  - enabled: 1
-    path: Assets/Scenes/GameloopDemo/scn01_gameplay_test.unity
-    guid: 36c07ba9060ec534ba35daa347951673
-  - enabled: 1
-    path: Assets/Scenes/SceneChangeTest2.unity
-    guid: 49f07cacdf725486f88300c33302ac31
-  - enabled: 1
-    path: Assets/Scenes/SceneChangeTest1.unity
-    guid: 2e9e08b2e8251444183d30492ff43432
-  - enabled: 1
     path: Assets/Scenes/Official/scn01_official_menu.unity
     guid: c8c34a7bcc05abd42b035f6c6577af30
   - enabled: 1
@@ -32,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official/scn03_official_cinematic.unity
     guid: 297eaf98c09ab2047a8010be8aa2e52f
+  - enabled: 1
+    path: Assets/Scenes/Official/scn04_official.unity
+    guid: 0231b18fa0115ec42a9e27109a2594f2
   m_configObjects: {}

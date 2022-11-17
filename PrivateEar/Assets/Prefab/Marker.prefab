@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dad655426385cc49b8b39b491fe9bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetMarkerSS: {x: 0, y: -150}
+  offsetMarkerSS: {x: 0, y: -5}
   offsetCObjectWS: {x: 0, y: 0.5}
 --- !u!120 &4726380756006786585
 LineRenderer:

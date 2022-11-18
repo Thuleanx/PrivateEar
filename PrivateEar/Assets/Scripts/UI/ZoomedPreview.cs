@@ -14,6 +14,7 @@ namespace PrivateEar {
 		[SerializeField] EventTrigger trigger;
 		[Space]
 		public UnityEvent OnObjectClicked;
+		public UnityEvent OnActivate;
 		public UnityEvent OnDeactivate;
 		public bool Active;
 	
@@ -44,6 +45,7 @@ namespace PrivateEar {
 
 			flavourText.text = obj.description;
 			slider.slideIn(() => trigger.enabled = true);
+			OnActivate?.Invoke();
 		}
 
 		public void DeactivateZoomedView() {

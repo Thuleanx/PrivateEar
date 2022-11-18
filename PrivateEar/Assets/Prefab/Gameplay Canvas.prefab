@@ -112,7 +112,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1608765319172488410}
   - component: {fileID: 1608765319172488408}
-  - component: {fileID: 1608765319172488415}
   - component: {fileID: 1608765319172488414}
   m_Layer: 5
   m_Name: TopBar
@@ -150,30 +149,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608765319172488411}
   m_CullTransparentMesh: 1
---- !u!114 &1608765319172488415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608765319172488411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4cefce9906a9844bce4fa46f2e812d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  allMarkers:
-  - {fileID: 4227623497133483839}
-  - {fileID: 982315653695426461}
-  - {fileID: 982315653523997958}
-  - {fileID: 982315652815997953}
-  - {fileID: 982315653946382688}
-  - {fileID: 982315653439183941}
-  - {fileID: 982315652435253935}
-  - {fileID: 982315651914586921}
-  - {fileID: 982315654023374453}
-  timelineMarker: {fileID: 8049546196451759743}
 --- !u!114 &1608765319172488414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1608765319701898721}
+  - component: {fileID: 6188026566763085395}
   m_Layer: 5
   m_Name: Marker Content
   m_TagString: Untagged
@@ -250,6 +226,30 @@ RectTransform:
   m_AnchoredPosition: {x: 2.619995, y: -7.0350037}
   m_SizeDelta: {x: -150.35992, y: -124.670006}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6188026566763085395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608765319701898722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4cefce9906a9844bce4fa46f2e812d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  allMarkers:
+  - {fileID: 4227623497133483839}
+  - {fileID: 982315653695426461}
+  - {fileID: 982315653523997958}
+  - {fileID: 982315652815997953}
+  - {fileID: 982315653946382688}
+  - {fileID: 982315653439183941}
+  - {fileID: 982315652435253935}
+  - {fileID: 982315651914586921}
+  - {fileID: 982315654023374453}
+  timelineMarker: {fileID: 8049546196451759743}
 --- !u!1 &8049546196451759740
 GameObject:
   m_ObjectHideFlags: 0

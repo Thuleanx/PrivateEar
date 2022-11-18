@@ -186,6 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddfba5b01245c34a985982e2bbe79f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeinDuration: 0.5
+  lingerDuration: 2
+  fadeoutDuration: 0.5
+  floatingSpeed: 30
 --- !u!225 &1427573794772918032
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -211,6 +215,7 @@ GameObject:
   - component: {fileID: 4303448587357597168}
   - component: {fileID: 4303448587357597169}
   - component: {fileID: 4303448587357597170}
+  - component: {fileID: 7535308301995313609}
   m_Layer: 5
   m_Name: SubmitButton
   m_TagString: Untagged
@@ -363,6 +368,36 @@ MonoBehaviour:
   OnClicked:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7535308301995313609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303448587357597175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -169202813
+      Data2: 1323050738
+      Data3: -221628273
+      Data4: -1238485112
+    Path: event:/SFX/UI/release (click)
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4303448587592818589
 GameObject:
   m_ObjectHideFlags: 0

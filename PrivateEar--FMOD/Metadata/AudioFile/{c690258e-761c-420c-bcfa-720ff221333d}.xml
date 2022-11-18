@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c690258e-761c-420c-bcfa-720ff221333d}">
+		<property name="assetPath">
+			<value>sfx/murder_sfx-05.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>62.618854166666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2549e35-770f-4af0-a5d0-e12e5b4639cd}</destination>
+		</relationship>
+	</object>
+</objects>

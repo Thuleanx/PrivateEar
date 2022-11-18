@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6d99c03f-e5d4-4061-be52-76d8bee6828b}">
+		<property name="name">
+			<value>Playing Tape</value>
+		</property>
+		<relationship name="folder">
+			<destination>{00badfa2-7758-4acf-9848-d886882163c0}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d518ecd7-1da0-4b76-8e71-60740346fc0f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d518ecd7-1da0-4b76-8e71-60740346fc0f}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5fb7c95b-e566-40fc-a25e-e44780bf6b54}">
+		<property name="assetPath">
+			<value>sfx/zoom in preview 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.3381041666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2549e35-770f-4af0-a5d0-e12e5b4639cd}</destination>
+		</relationship>
+	</object>
+</objects>

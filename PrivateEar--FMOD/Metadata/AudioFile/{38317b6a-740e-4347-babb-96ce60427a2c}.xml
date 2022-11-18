@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{38317b6a-740e-4347-babb-96ce60427a2c}">
+		<property name="assetPath">
+			<value>OST/PrivEar opening text block tune.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.4</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2549e35-770f-4af0-a5d0-e12e5b4639cd}</destination>
+		</relationship>
+	</object>
+</objects>

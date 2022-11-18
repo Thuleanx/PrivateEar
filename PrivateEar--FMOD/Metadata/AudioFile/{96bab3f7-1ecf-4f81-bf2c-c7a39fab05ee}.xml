@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{96bab3f7-1ecf-4f81-bf2c-c7a39fab05ee}">
+		<property name="assetPath">
+			<value>sfx/paper flipping.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.0103174603174603</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2549e35-770f-4af0-a5d0-e12e5b4639cd}</destination>
+		</relationship>
+	</object>
+</objects>

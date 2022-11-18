@@ -52,7 +52,7 @@ namespace PrivateEar {
 				WaitForPlayerClickCObject(
 				WaitForZoomedPreviewTutorial(
 				WaitForPlayerDragDropMarker(
-				WaitForPlayerConfirmChoices(null)
+					WaitForPlayerConfirmChoices(null)
 				))))
 			);
 		}
@@ -120,11 +120,14 @@ namespace PrivateEar {
 		}
 		public IEnumerator WaitForZoomedPreviewTutorial(IEnumerator OnComplete) {
 			BlockAllCanvasInteractions();
+			BlockAllCObjectInteractions();
 			yield return WaitForDimGlobalLight();
+			UnblockCObjectInteractions();
 			objectZoomTutorialText.gameObject.SetActive(true);
 			zoomedPreviewObjectHighlight.gameObject.SetActive(true);
 			FadeinPopupLight(zoomedPreviewObjectHighlight);
 			UnblockCanvasInteractions();
+
 			yield return WaitForEvents(new List<UnityEvent>(){zoomedPreview.OnObjectClicked, zoomedPreview.OnDeactivate});
 			zoomedPreviewObjectHighlight.gameObject.SetActive(false);
 			objectZoomTutorialText.gameObject.SetActive(false);
@@ -151,11 +154,11 @@ namespace PrivateEar {
 			Marker marker = FindObjectOfType<Marker>();
 			CObject cobject = FindObjectOfType<CObject>();
 			BlockAllCObjectInteractions();
+			DisableAllMarkers();
 			cobject.InteractOverride = true;
 
 			yield return WaitForDimGlobalLight();
 
-			DisableAllMarkers();
 			marker.SetInteractable(true);
 
 			dragTutorialText.gameObject.SetActive(true);
@@ -191,13 +194,13 @@ namespace PrivateEar {
 		public IEnumerator WaitForPlayerConfirmChoices(IEnumerator OnComplete) {
 			while (!GameMaster.Instance.IsAllMatched) yield return null;
 			BlockAllCObjectInteractions();
+			DisableAllMarkers();
 
 			confirmTutorialText.gameObject.SetActive(true);
 			confirmButtonHighlight.gameObject.SetActive(true);
 			FadeinPopupLight(confirmButtonHighlight);
 
 			yield return WaitForDimGlobalLight();
-			DisableAllMarkers();
 
 			// wait for player to confirm choice
 			SubmitButton submitButton = FindObjectOfType<SubmitButton>();

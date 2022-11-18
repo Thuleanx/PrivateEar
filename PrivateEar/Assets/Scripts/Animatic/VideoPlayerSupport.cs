@@ -10,9 +10,11 @@ namespace PrivateEar {
 
 		void Awake() {
 			Player = GetComponent<VideoPlayer>();
+
 		}
 
 		void Start() {
+			Player.url = System.IO.Path.Combine (Application.streamingAssetsPath,"animatic.mp4");
 			Player.loopPointReached += OnVideoEnd;
 		}
 

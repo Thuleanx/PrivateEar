@@ -15,7 +15,7 @@ PlayerSettings:
   companyName: BRGD
   productName: PrivateEar
   defaultCursor: {fileID: 0}
-  cursorHotspot: {x: 0.25, y: 0.25}
+  cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
@@ -45,7 +45,7 @@ PlayerSettings:
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
   defaultScreenWidthWeb: 1280
-  defaultScreenHeightWeb: 760
+  defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1

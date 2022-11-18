@@ -29,11 +29,15 @@ namespace PrivateEar {
 			);
 		}
 
+		public void slideIn() => slideIn(null);
+
 		public void slideOut(Action OnComplete) {
 			DOTween.KillAll();
 			RectTransform.DOAnchorPos(offset + initialAnchor, slideDuration).SetEase(easing).OnComplete(
 				() => OnComplete?.Invoke()
 			);
 		}
+
+		public void slideOut() => slideOut(null);
 	}
 }

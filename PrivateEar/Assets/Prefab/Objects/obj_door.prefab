@@ -21,8 +21,8 @@ PrefabInstance:
       objectReference: {fileID: 164938391, guid: e380182fafd45244c8255898ea948340, type: 3}
     - target: {fileID: 8073612297800937112, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: description
-      value: "The door. It\u2019' pretty old, showing a lot of wear and tear over
-        the years. When the body was discovered, it was already unlocked. "
+      value: 'The door. It''s pretty old, showing a lot of wear and tear over the
+        years. When the body was discovered, it was already unlocked. '
       objectReference: {fileID: 0}
     - target: {fileID: 8073612297800937113, guid: 7401e7c26f4c9274caf5396efbdef75d, type: 3}
       propertyPath: m_RootOrder

@@ -3787,9 +3787,9 @@ MonoBehaviour:
   blackScreen: {fileID: 1343410139}
   fadeCanvas: {fileID: 1694562003}
   sceneReference:
-    Scene: {fileID: 102900000, guid: 542e15babc0adff45994f42eb736af26, type: 3}
-    SceneName: scn02_animatic_test
-    sceneIndex: 2
+    Scene: {fileID: 102900000, guid: 297eaf98c09ab2047a8010be8aa2e52f, type: 3}
+    SceneName: scn03_official_cinematic
+    sceneIndex: 3
     sceneEnabled: 1
   isPause: 0
 --- !u!114 &1694562001
@@ -4474,6 +4474,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 399689334}
+    - target: {fileID: 2402969754490668259, guid: fc5f819dc25b7b045bebc7240bb29faf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4227623497133483839, guid: fc5f819dc25b7b045bebc7240bb29faf, type: 3}
       propertyPath: correctMatching
       value: 

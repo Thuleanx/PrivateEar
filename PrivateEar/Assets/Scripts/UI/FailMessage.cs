@@ -32,7 +32,7 @@ namespace PrivateEar {
 			float totalDuration = fadeinDuration + lingerDuration + fadeoutDuration;
 			sequence.Append(CanvasGroup.DOFade(1, fadeinDuration));
 			sequence.AppendInterval(lingerDuration);
-			sequence.Append(CanvasGroup.DOFade(1, fadeoutDuration));
+			sequence.Append(CanvasGroup.DOFade(0, fadeoutDuration));
 			sequence.Insert(0, RectTransform.DOAnchorPos(originalPos + Vector3.up * floatingSpeed * totalDuration, totalDuration));
 
 			sequence.OnComplete(() => {

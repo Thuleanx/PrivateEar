@@ -384,6 +384,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_broken window
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 1529495673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1165088628
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -1166175854
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: -618305970
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 044b6925e055a4b4ebf0f9523f07f67f, type: 3}
@@ -507,6 +527,26 @@ PrefabInstance:
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: correctMatching
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_stool
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: -359809600
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1288272603
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -427781705
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 1367746786
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
@@ -638,6 +678,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_debris
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 1903781641
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1261824522
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -1139180883
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 459475379
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 199f56d8a69606d4f8454197041af414, type: 3}
@@ -761,6 +821,26 @@ PrefabInstance:
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: correctMatching
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_vase
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 1654939512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1189500230
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -1588686711
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 766668029
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
@@ -888,6 +968,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_footstep
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 1893095572
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1259051668
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -2092321371
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: -470526369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 34e02451a573ec644ab541874707578c, type: 3}
@@ -1011,6 +1111,26 @@ PrefabInstance:
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: correctMatching
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_bloodstains
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 2103573596
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1175841331
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -531597891
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 345109613
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
@@ -1138,6 +1258,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_cleaning
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: -1777571145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1264306251
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: 1568160923
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: -819717267
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: eac1798345f0c9544b1e6bb8dea94948, type: 3}
@@ -1261,6 +1401,26 @@ PrefabInstance:
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: correctMatching
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 468190797
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1288303611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -454800199
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 140431146
       objectReference: {fileID: 0}
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: <CustomSprite>k__BackingField
@@ -1390,6 +1550,26 @@ PrefabInstance:
     - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: correctMatching
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Path
+      value: event:/SFX/Murder/sfx_murder_dinner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data1
+      value: 298421033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data2
+      value: 1206261241
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data3
+      value: -661852791
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013840660132725707, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: sfxReference.Guid.Data4
+      value: 265088636
       objectReference: {fileID: 0}
     - target: {fileID: 3966100937443743969, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Pivot.x

@@ -197,6 +197,21 @@ MonoBehaviour:
   offset: {x: 0, y: 250}
   slideDuration: 1
   easing: 27
+  onSlideinFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6188026566763085395}
+        m_TargetAssemblyTypeName: PrivateEar.SpectrogramManager, Assembly-CSharp
+        m_MethodName: TurnOnMarkers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5338716593202567857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,6 +600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -879,6 +898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1023,6 +1046,10 @@ PrefabInstance:
     - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Name
       value: Marker (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
@@ -1169,6 +1196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1314,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1458,6 +1493,10 @@ PrefabInstance:
     - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Name
       value: Marker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3966100937989255279, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Sprite
@@ -1748,6 +1787,10 @@ PrefabInstance:
     - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
       propertyPath: m_Name
       value: Marker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966100937443743970, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb943eb88d8d969499dad6a2a4e1c133, type: 3}

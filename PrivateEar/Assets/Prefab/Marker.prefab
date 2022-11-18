@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6418302333611187239}
   - component: {fileID: 8286976112276821792}
   - component: {fileID: 7478710795047700229}
+  - component: {fileID: 7247958350551944201}
   m_Layer: 5
   m_Name: Marker
   m_TagString: Untagged
@@ -213,6 +214,36 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &7247958350551944201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3966100937443743970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41df5dba2dbd514ca34e90e61314aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8953860976762554846}
+        m_TargetAssemblyTypeName: PrivateEar.Vibrate, Assembly-CSharp
+        m_MethodName: StartVibrate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3966100937712928294
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +332,7 @@ GameObject:
   - component: {fileID: 3966100937989255277}
   - component: {fileID: 3966100937989255278}
   - component: {fileID: 3966100937989255279}
+  - component: {fileID: 8953860976762554846}
   m_Layer: 5
   m_Name: Marker Interactible
   m_TagString: Untagged
@@ -323,11 +355,11 @@ RectTransform:
   m_Father: {fileID: 3966100937443743969}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -37.7}
-  m_SizeDelta: {x: 33, y: 33}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -121.42999}
+  m_SizeDelta: {x: 33, y: 32.999992}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3966100937989255277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,6 +454,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8953860976762554846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3966100937989255265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d157535957a6149bed21c6e4b0db98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: {x: 0.32752612, y: 0.7456447}
+  duration: 0.5
+  scaleEase: 27
 --- !u!1 &7060843838292340866
 GameObject:
   m_ObjectHideFlags: 0

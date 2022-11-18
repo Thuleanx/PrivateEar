@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System;
 using DG.Tweening;
 
@@ -11,9 +12,9 @@ namespace PrivateEar {
 		[SerializeField] Vector2 offset;
 		[SerializeField, Range(0,10f)] float slideDuration;
 		[SerializeField] Ease easing;
+		[SerializeField] UnityEvent onSlideinFinish;
 
 		Vector2 initialAnchor;
-
 
 		private void Awake() {
 			RectTransform = GetComponent<RectTransform>();
@@ -25,7 +26,10 @@ namespace PrivateEar {
 			DOTween.KillAll();
 			RectTransform.anchoredPosition = initialPos;
 			RectTransform.DOAnchorPos(initialAnchor, slideDuration).SetEase(easing).OnComplete(
-				() => OnComplete?.Invoke()
+				() => {
+					OnComplete?.Invoke();
+					onSlideinFinish?.Invoke();
+				}
 			);
 		}
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using NaughtyAttributes;
 using FMODUnity;
 
@@ -84,6 +85,12 @@ namespace PrivateEar {
 		}
 		public void SetMarkersInteratable(bool interactable) {
 			foreach (Marker marker in allMarkers) marker.SetInteractable(interactable);
+		}
+
+		public void TurnOnMarkers() {
+			foreach (Marker marker in allMarkers) {
+				marker.GetComponentInChildren<Vibrate>().StartVibrate();
+			}
 		}
 	}
 }

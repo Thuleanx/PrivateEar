@@ -62,12 +62,12 @@ namespace PrivateEar {
 			CObject obj = objToFocus ? objToFocus : FindObjectOfType<CObject>();
 
 			// block interactions with everything else but the object
-			obj.InteractOverride = true;
 			BlockAllInteractions();
 			DisableAllMarkers();
 
 			// dim the light
 			yield return WaitForDimGlobalLight();
+			obj.InteractOverride = true;
 
 			objectClickTutorialText.gameObject.SetActive(true);
 

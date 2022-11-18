@@ -3124,6 +3124,7 @@ GameObject:
   - component: {fileID: 884592893}
   - component: {fileID: 884592892}
   - component: {fileID: 884592891}
+  - component: {fileID: 884592895}
   m_Layer: 5
   m_Name: Fail Message
   m_TagString: Untagged
@@ -3149,7 +3150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 75.84271, y: 50.561825}
+  m_AnchoredPosition: {x: 75.84271, y: 50.56183}
   m_SizeDelta: {x: 800, y: 125}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &884592891
@@ -3218,6 +3219,36 @@ MonoBehaviour:
   lingerDuration: 2
   fadeoutDuration: 0.5
   floatingSpeed: 30
+--- !u!114 &884592895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884592889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 206906604
+      Data2: 1268669701
+      Data3: -1698204019
+      Data4: -1660478582
+    Path: event:/SFX/UI/fail
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &928683009 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 739401810948400685, guid: 05e0c92040eaac848a1ed6e31a3a2166, type: 3}

@@ -119,11 +119,12 @@ namespace PrivateEar {
 			yield return OnComplete;
 		}
 		public IEnumerator WaitForZoomedPreviewTutorial(IEnumerator OnComplete) {
+			BlockAllCanvasInteractions();
 			yield return WaitForDimGlobalLight();
-
 			objectZoomTutorialText.gameObject.SetActive(true);
 			zoomedPreviewObjectHighlight.gameObject.SetActive(true);
 			FadeinPopupLight(zoomedPreviewObjectHighlight);
+			UnblockCanvasInteractions();
 			yield return WaitForEvents(new List<UnityEvent>(){zoomedPreview.OnObjectClicked, zoomedPreview.OnDeactivate});
 			zoomedPreviewObjectHighlight.gameObject.SetActive(false);
 			objectZoomTutorialText.gameObject.SetActive(false);

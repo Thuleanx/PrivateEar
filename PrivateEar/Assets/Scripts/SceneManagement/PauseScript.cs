@@ -6,7 +6,6 @@ public class PauseScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject pauseCanvas;
-    float targetPos = 0f;
 
     static int PAUSE = 0, ENDPAUSE = 1, NEUTRAL = 2;
     int pauseState = 2;

@@ -88,6 +88,7 @@ namespace PrivateEar {
 		}
 
 		public void TurnOnMarkers() {
+			Debug.Log("TURN ON MARKERS");
 			foreach (Marker marker in allMarkers) {
 				marker.GetComponentInChildren<Vibrate>().StartVibrate();
 			}

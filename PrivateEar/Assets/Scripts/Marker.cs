@@ -65,7 +65,7 @@ namespace PrivateEar {
 
 		public void OnBeginDrag(PointerEventData eventData) {
 			if (Interactible) {
-				Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position / canvas.scaleFactor + mouseHoverOffsetSS);
+				Vector2 pointerPosWS = canvas.worldCamera.ScreenToWorldPoint(eventData.position + mouseHoverOffsetSS);
 				markerObj.position = pointerPosWS;
 				InputManager.Instance.DraggingCnt++;
 				dragging = true;

@@ -27,6 +27,7 @@ namespace PrivateEar {
 		Vector2 markerObjPos;
 
 		[SerializeField] public UnityEvent<Marker> OnClicked;
+		[SerializeField] public UnityEvent<Marker> OnDragBegin;
 
 		[Space]
 		public UnityEvent OnCObjectAssigned;
@@ -68,6 +69,7 @@ namespace PrivateEar {
 				markerObj.position = pointerPosWS;
 				InputManager.Instance.DraggingCnt++;
 				dragging = true;
+				OnDragBegin?.Invoke(this);
 			}
 		}
 

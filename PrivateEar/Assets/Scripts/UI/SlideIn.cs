@@ -13,6 +13,7 @@ namespace PrivateEar {
 		[SerializeField, Range(0,10f)] float slideDuration;
 		[SerializeField] Ease easing;
 		[SerializeField] UnityEvent onSlideinFinish;
+		[SerializeField] UnityEvent onSlideoutFinish;
 
 		Vector2 initialAnchor;
 
@@ -38,7 +39,10 @@ namespace PrivateEar {
 		public void slideOut(Action OnComplete) {
 			DOTween.KillAll();
 			RectTransform.DOAnchorPos(offset + initialAnchor, slideDuration).SetEase(easing).OnComplete(
-				() => OnComplete?.Invoke()
+				() => {
+					OnComplete?.Invoke();
+					onSlideoutFinish?.Invoke();
+				}
 			);
 		}
 

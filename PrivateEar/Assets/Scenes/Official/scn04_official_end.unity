@@ -615,7 +615,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -54, y: 54}
-  m_SizeDelta: {x: 400, y: 150}
+  m_SizeDelta: {x: 606.5, y: 150}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &942394454
 MonoBehaviour:
@@ -738,8 +738,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 741092283, guid: 6371b6ada4470a84ebb07511136d43d8, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9d033119dde2e4a3fa00b28309418ed7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Restart
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5abf1095015bb40bfb3615205faa53df, type: 2}
   m_sharedMaterial: {fileID: 959013769780128438, guid: 5abf1095015bb40bfb3615205faa53df, type: 2}
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -5677,6 +5677,10 @@ PrefabInstance:
       propertyPath: correctMatching
       value: 
       objectReference: {fileID: 2070946202}
+    - target: {fileID: 982315652815997953, guid: fc5f819dc25b7b045bebc7240bb29faf, type: 3}
+      propertyPath: <CustomSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ece72cea8b251244a2c88902199bfea, type: 3}
     - target: {fileID: 982315653439183941, guid: fc5f819dc25b7b045bebc7240bb29faf, type: 3}
       propertyPath: correctMatching
       value: 
